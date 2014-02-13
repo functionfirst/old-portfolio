@@ -1,7 +1,7 @@
 @import "reset.less";
 @import "header.less";
 @import "overlay.less";
-@import "menu-button.less";
+@import "nav.less";
 @import "new.less";
 
 * {
@@ -58,6 +58,7 @@ hr {
 
 /* content */
 .content {
+	position: relative;
 	background: #f3f3f3;
 	padding: 10px;
 }
@@ -145,9 +146,6 @@ footer {
 }
 /* Desktops and laptops */
 @media only screen and (min-width: 960px) {
-	.banner {
-		position: relative;
-	}
 	.ext-links {
 		position: absolute;
 		top: 0;

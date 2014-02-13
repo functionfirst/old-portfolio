@@ -1,12 +1,12 @@
-
-	
-	<footer>
-		<p>A design &amp; development portfolio by Alan Jenkins.</p>
-	</footer>
 </div>
 
+
+
+
+<div class="modal-overlay"></div>
+
 <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.min.js"></script>
-<script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript" src="/js/functions.js"></script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-6470875-3']);

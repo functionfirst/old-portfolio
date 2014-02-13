@@ -27,9 +27,9 @@
 
 		<article>
 			<header>
-				<a href="http://getbuildmate.com" class="view"><img src="http://images.functionfirst.co.uk/buildmate.jpg" alt="Buildmate - Application" /></a>
+				<a href="https://buildmateapp.com" class="view"><img src="http://images.functionfirst.co.uk/buildmate.jpg" alt="Buildmate - Application" /></a>
 
-				<h1><a href="http://getbuildmate.com">Buildmate - Application</a></h1>
+				<h1><a href="https://buildmateapp.com">Buildmate - Application</a></h1>
 			</header>
 			
 			<section>
@@ -48,9 +48,9 @@
 		
 		<article>
 			<header>
-				<a href="http://images.functionfirst.co.uk/build_mate_app.jpg" class="view"><img src="http://images.functionfirst.co.uk/build_mobile.jpg" alt="Thumbnail for the Buildmate mobile application" /></a>
+				<a href="/buildmate-mobile" class="view"><img src="http://images.functionfirst.co.uk/build_mobile.jpg" alt="Thumbnail for the Buildmate mobile application" /></a>
 
-				<h1><a href="http://images.functionfirst.co.uk/build_mate_app.jpg">Buildmate - Mobile</a></h1>
+				<h1><a href="/buildmate-mobile">Buildmate - Mobile</a></h1>
 			</header>
 
 			<section>
@@ -71,12 +71,12 @@
 			<header>
 				<a href="http://www.youtube.com/watch?v=GVw8rwqRx5o" class="view"><img src="http://images.functionfirst.co.uk/infocapture.jpg" alt="The inside track on the Claromentis 7.0 redesign" /></a>
 
-				<h1><a href="/claromentis/">Proof of Concept</a></h1>
+				<h1><a href="http://www.youtube.com/watch?v=GVw8rwqRx5o">Form Builder - Infocapture</a></h1>
 			</header>
 
 			<section>
 				<p>
-					Proof of Concept for business process management application, Infocapture
+					Early stage proof of concept for business process management application, Infocapture
 				</p>
 
 			    <dl>
@@ -112,7 +112,7 @@
 			<header>
 				<a href="http://images.functionfirst.co.uk/carioca_digital_logo.jpg" class="view"><img src="http://images.functionfirst.co.uk/carioca_thumb.jpg" alt="Thumbnail for the Carioca Digital logo" /></a>
 
-				<h1><a href="http://images.functionfirst.co.uk/carioca_digital_logo.jpg">Carioca Digital</a></h1>
+				<h1><a href="http://images.functionfirst.co.uk/carioca_digital_logo.jpg">Carioca Digital - Logo</a></h1>
 			</header>
 
 			<section>
@@ -133,7 +133,7 @@
 			<header>
 				<a href="http://http://prototypes.claromentis.com/timesheets/" class="view"><img src="http://images.functionfirst.co.uk/timesheets.jpg" alt="Timesheets prototype" /></a>
 
-				<h1><a href="http://http://prototypes.claromentis.com/timesheets/">Timesheets</a></h1>
+				<h1><a href="http://http://prototypes.claromentis.com/timesheets/">Timesheets - Prototype</a></h1>
 			</header>
 			
 			<section>
@@ -154,7 +154,7 @@
 			<header>
 				<a href="prototypes/planet_explore_mobile/" class="view"><img src="http://images.functionfirst.co.uk/planet_explore.jpg" alt="Planet Explore mobile prototype" /></a>
 
-				<h1><a href="http://prototypes.claromentis.com/planet_explore_mobile/">Planet Explore</a></h1>
+				<h1><a href="http://prototypes.claromentis.com/planet_explore_mobile/">Planet Explore - Prototype</a></h1>
 			</header>
 			
 			<section>
@@ -175,7 +175,7 @@
 			<header>
 				<a href="http://images.functionfirst.co.uk/forward_wireframe.jpg" class="view"><img src="http://images.functionfirst.co.uk/forward.jpg" alt="Thumbnail for a Learning &amp; Development portal" /></a>
 				
-				<h1><a href="http://images.functionfirst.co.uk/forward_wireframe.jpg">Forward Technology</a></h1>
+				<h1><a href="http://images.functionfirst.co.uk/forward_wireframe.jpg">Forward Technology - Wireframe</a></h1>
 			</header>
 
 			<section>
@@ -193,7 +193,6 @@
 			</section>
 		</article>
 	</section>
-
 	<aside style="clear:left">
 		<section class="about">
 			<h1>About</h1>

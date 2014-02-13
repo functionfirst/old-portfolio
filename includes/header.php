@@ -1,7 +1,8 @@
 <?php
 	require "lessc.inc.php";
 	$less = new lessc;
-	$less->compileFile("css/default.less", "css/default.less.css");
+	$less->addImportDir("/css");
+	$less->compile("default.less", "default.less.css");
 ?>
 
 <!DOCTYPE html> 
@@ -24,7 +25,7 @@
 
     <!-- css -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin,latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/default.less.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/css/default.less.css" type="text/css" media="all" />
 
 	<!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -40,18 +41,17 @@
 		<a href="#" class="nav-button" data-navigation="open"><span>Menu</span></a>
 	
 		<ul>
-			<!-- <li><a href="#">Home</a></li> -->
-			<li><a href="#">About</a></li>
-			<li><a href="#">Experience</a></li>
-			<li><a href="#">Skills</a></li>
-			<li><a href="http://uk.linkedin.com/in/aljenks">LinkedIn</a></li>
-			<li><a href="https://docs.google.com/document/d/1xtrGsfAjW8s9hdqVEkJMyMfiJOYWCiiVVHyKB5Oxtes/edit?usp=sharing">Download CV</a></li>
+			<li><a href="#"><span data-hover="About">About</span></a></li>
+			<li><a href="#"><span data-hover="Experience">Experience</span></a></li>
+			<li><a href="#"><span data-hover="Skills">Skills</span></a></li>
+			<li><a href="http://uk.linkedin.com/in/aljenks"><span data-hover="LinkedIn">LinkedIn</span></a></li>
+			<li><a href="https://docs.google.com/document/d/1xtrGsfAjW8s9hdqVEkJMyMfiJOYWCiiVVHyKB5Oxtes/edit?usp=sharing"><span data-hover="Download CV">Download CV</span></a></li>
 		</ul>
 	</nav>
 
 
 <div class="content">
-	<header class="banner">
+	<header class="header">
 		<h1>functionfirst</h1>
-		<h2>a web design and development portfolio</h2>
+		<h2>the web portfolio of alan jenkins</h2>
 	</header>

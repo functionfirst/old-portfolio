@@ -1,47 +1,7 @@
-<!DOCTYPE html> 
-<!--[if lt IE 7]><html lang="en" class="ie6"><![endif]--> 
-<!--[if IE 7]><html lang="en" class="ie7"><![endif]--> 
-<!--[if IE 8]><html lang="en" class="ie8"><![endif]--> 
-<!--[if IE 9]><html lang="en" class="ie9"><![endif]--> 
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
-<head>
-    <title>Claromentis 6.x to 7.0 - function first - a web design and development portfolio</title>
-
-    <!-- meta data -->
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="functionfirst is the online portfolio of Web Designer and Developer, Alan Jenkins. As a professional Web Designer and Developer since 2000 I have worked with a variety of SME's and successful brands." />
-    <meta name="keywords" content="online portfolio, web designer, web developer, web design, designer, design, developer, portfolio" />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Alan Jenkins, alan@functionfirst.co.uk" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-
-    <!-- css -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin,latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="../css/default.css" type="text/css" media="all" />
-
-	<!--[if IE]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]--> 
-	
-	<!--[if lt IE 9]>
-	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-	<![endif]-->
-</head>
-<body>
-
-
-<div class="content">
-	<header class="banner">
-		<h1>functionfirst</h1>
-		<h2>a web design and development portfolio</h2>
-		
-		<p class="ext-links">
-			<a href="http://uk.linkedin.com/in/aljenks" title="View my public LinkedIn profile" class="ln">LinkedIn</a>
-			<a href="https://docs.google.com/document/d/1xtrGsfAjW8s9hdqVEkJMyMfiJOYWCiiVVHyKB5Oxtes/edit?usp=sharing" title="View on Google Drive" class="cv">View my CV</a>
-		</p>
-	</header>
-
+<?php
+	$body = "buildmate-mobile";
+	require "../includes/header.php";
+?>
 	<section class="case-study">
 		<article class="case-study-article">
 			<section class="case-study-section">
@@ -132,23 +92,4 @@
 		</article>
 	</section>
 
-	<footer>
-		<p>A design &amp; development portfolio by Alan Jenkins.</p>
-	</footer>
-</div>
-
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-6470875-3']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
-</body>
-
-</html>
+<?php require "../includes/footer.php"; ?>
