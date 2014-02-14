@@ -195,51 +195,23 @@ body {
     min-height: 34px;
   }
 }
-.modal-overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  opacity: 0;
-  background: rgba(143,27,15,0.8);
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+@media only screen and (max-width: 767px) {
+  .content.overlay-open {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
 }
-.modal-show ~ .modal-overlay {
-  opacity: 1;
-  visibility: visible;
+.content {
+  background: #f3f3f3;
+  padding: 20px 20px 20px 90px;
 }
-.modal-show.modal-open ~ .modal-overlay {
-  background: #e74c3c;
-}
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 50%;
-  max-width: 630px;
-  min-width: 320px;
-  height: auto;
-  z-index: 2000;
-  visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-.modal-show {
-  visibility: visible;
+.content-block {
+  margin-top: 18px;
+  border-top: 1px dashed #ddd;
 }
 .nav-menu {
   position: fixed;
-  z-index: 2;
+  z-index: 20;
   top: 0;
   left: 0;
   width: 300px;
@@ -308,6 +280,8 @@ body {
   width: 50px;
   height: 50px;
   cursor: pointer;
+  -webkit-transition: left 0.3s;
+  transition: left 0.3s;
 }
 .nav-button span {
   position: absolute;
@@ -360,10 +334,146 @@ body {
 .nav-open .nav-button span {
   background-color: transparent;
 }
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.close-button span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: -2px;
+  font-size: 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.close-button span:before,
+.close-button span:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+  content: '';
+  -webkit-transition: -webkit-transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s, background-color 0.3s;
+}
+.close-button span:before {
+  -webkit-transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(45deg);
+}
+.close-button span:after {
+  -webkit-transform: translateY(0) rotate(-45deg);
+  transform: translateY(0) rotate(-45deg);
+}
+.close-button:hover span:after,
+.close-button:hover span:before {
+  background-color: #DC4321;
+}
+@media only screen and (max-width: 767px) {
+  .nav-menu,
+  .nav-menu ul {
+    width: 100%;
+  }
+  .nav-button {
+    left: -20px;
+  }
+  .nav-open .nav-button {
+    left: 20px;
+  }
+}
+aside section {
+  position: fixed;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  top: 0;
+  z-index: 30;
+  bottom: 0;
+  max-height: 100%;
+  right: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  padding: 30px;
+  overflow: auto;
+  margin: auto;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate(150px,0);
+  -moz-transform: translate(150px,0);
+  transform: translate(150px,0);
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  transition: .3s linear;
+}
+aside section.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  transform: translate(0,0);
+}
+aside section h1 {
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+aside section ul {
+  margin: 18px 0;
+}
+aside section li {
+  font-size: 13px;
+  line-height: 36px;
+  border: 1px solid #ddd;
+  border-width: 1px 0;
+  text-indent: 10px;
+}
+aside section li + li {
+  border-width: 0 0 1px;
+}
+.rate1,
+.rate2,
+.rate3 {
+  background: url(http://images.functionfirst.co.uk/rate.gif) no-repeat 95% 12px;
+}
+.rate2 {
+  background-position: 95% -18px;
+}
+.rate3 {
+  background-position: 95% -48px;
+}
+@media only screen and (max-width: 959px) {
+  aside section {
+    width: 80%;
+    height: 80%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  aside section {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+}
 .view {
   display: block;
-  height: 230px;
+  max-height: 230px;
+  width: 100%;
   overflow: hidden;
+  position: relative;
 }
 .view img {
   display: block;
@@ -378,6 +488,33 @@ body {
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   transform: scale(1.5);
+}
+.view span:before {
+  content: attr(data-hover);
+  display: block;
+  z-index: 2;
+  bottom: 0;
+  visibility: hidden;
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  opacity: 0;
+  padding: 8px 16px;
+  -webkit-transform: translate(-50px,0);
+  -moz-transform: translate(-50px,0);
+  transform: translate(-50px,0);
+  -webkit-transition: .2s ease-out all;
+  -moz-transition: .2s ease-out all;
+  -ms-transition: .2s ease-out all;
+  -o-transition: .2s ease-out all;
+  transition: .2s ease-out all;
+}
+.view:hover span:before {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  transform: translate(0,0);
 }
 * {
   -webkit-box-sizing: border-box;
@@ -400,6 +537,9 @@ a {
 a:hover {
   color: #B24934;
 }
+img {
+  max-width: 100%;
+}
 p {
   margin: 18px 0;
 }
@@ -415,11 +555,6 @@ hr {
   font-weight: 300;
   color: #B24934;
   line-height: 30px;
-}
-.content {
-  position: relative;
-  background: #f3f3f3;
-  padding: 10px;
 }
 dt {
   font-weight: 900;
@@ -446,114 +581,63 @@ dt {
   background: #fff;
   box-shadow: 0 3px 12px #ddd;
 }
-.experience ul {
-  margin: 18px 0;
+.portfolio article {
+  float: left;
+  width: 21%;
+  margin: 2%;
+  height: 500px;
+  position: relative;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 1px 5px #eee;
 }
-.experience li {
-  line-height: 30px;
-  border: 1px solid #ddd;
-  border-width: 1px 0;
-  padding: 0 5px;
+.portfolio article header h1 {
+  font-size: 18px;
+  margin: 20px;
 }
-.experience li + li {
-  border-width: 0 0 1px;
+.portfolio article section {
+  margin: 20px;
 }
-footer {
-  text-align: center;
-  color: #666;
-  font-size: 10px;
-  clear: both;
+.portfolio article dl {
+  font-size: 12px;
 }
-.rate1,
-.rate2,
-.rate3 {
-  background: url(http://images.functionfirst.co.uk/rate.gif) no-repeat 95% 12px;
+.portfolio article dt {
+  float: left;
+  width: 100px;
 }
-.rate2 {
-  background-position: 95% -18px;
-}
-.rate3 {
-  background-position: 95% -48px;
+.portfolio article dd {
+  margin-left: 100px;
 }
 @media only screen and (min-width: 960px) {
-  .ext-links {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
   .portfolio article {
-    float: left;
-    width: 400px;
-    margin: 40px 40px 0 0;
-    height: 500px;
-    position: relative;
-    background: #fff;
-    border: 1px solid #e8e8e8;
-    box-shadow: 0 1px 5px #eee;
+    width: 29%;
   }
-  .portfolio article h1 {
-    font-size: 18px;
-    margin: 20px;
-  }
-  .portfolio section {
-    margin: 20px;
-  }
-  dl {
-    font-size: 12px;
-  }
-  dt {
-    float: left;
-    width: 100px;
-  }
-  dd {
-    margin-left: 100px;
-  }
-  .case-study-article {
-    margin: 43px;
-  }
-  .case-study-content {
-    float: left;
-    width: 50%;
-  }
-  .case-study-aside {
-    float: left;
-    width: 40%;
-    margin-left: 10%;
-  }
-  .content {
-    padding: 20px 20px 20px 90px;
+}
+@media only screen and (min-width: 1280px) {
+  .portfolio article {
+    width: 21%;
   }
 }
 @media only screen and (max-width: 959px) {
-  .case-study-article {
-    padding: 43px 0 0;
-  }
   .portfolio article {
-    float: left;
-    width: 100%;
-    margin: 0 0 40px;
+    width: 46%;
   }
-  .portfolio header {
-    float: left;
-  }
-  .portfolio section {
-    margin: 30px 0 0 240px;
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio article dt {
     float: none;
-    width: auto;
+  }
+  .portfolio article dd {
+    margin: 0;
   }
 }
 @media only screen and (max-width: 479px) {
-  .portfolio header {
+  .portfolio article {
     float: none;
+    width: auto;
+    margin: 2% 0;
   }
-  .portfolio section {
-    margin: 0;
-  }
-  section {
-    margin: 0 0 20px;
-  }
-  .portfolio img {
-    width: 100%;
-    max-width: 423px;
+  .content {
+    padding: 80px 20px 20px;
   }
 }

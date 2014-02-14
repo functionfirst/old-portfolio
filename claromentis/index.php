@@ -1,7 +1,13 @@
 <?php
-	$body = "buildmate-mobile";
+	$body = "";
 	require "../includes/header.php";
 ?>
+
+<div class="content-block">
+	<p><a href="/">&laquo; Back to Porfolio</a></p>
+
+	<h1>Claromentis 7.0 - Front-end migration</h1>
+
 	<section class="case-study">
 		<article class="case-study-article">
 			<section class="case-study-section">
@@ -91,5 +97,6 @@
 			</footer>
 		</article>
 	</section>
+</div>
 
 <?php require "../includes/footer.php"; ?>

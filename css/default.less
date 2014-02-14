@@ -1,7 +1,10 @@
 @import "reset.less";
 @import "header.less";
 @import "overlay.less";
+@import "content.less";
 @import "nav.less";
+@import "content.less";
+@import "aside.less";
 @import "new.less";
 
 * {
@@ -27,6 +30,9 @@ a {
 a:hover {
 	color: #B24934;
 }
+img {
+	max-width: 100%;
+}
 p {
 	margin: 18px 0;
 }
@@ -38,16 +44,6 @@ hr {
 	width:  620px;
 }
 
-/*.bg {
-	height: 100%;
-	left: 0;
-	position: fixed;
-	text-align: right;
-	top: 0;
-	width: 100%;
-	z-index: 10;
-}*/
-
 /* header */
 .banner h1 {
 	font-size: 29px;
@@ -56,28 +52,6 @@ hr {
 	line-height: 30px;
 }
 
-/* content */
-.content {
-	position: relative;
-	background: #f3f3f3;
-	padding: 10px;
-}
-/*section {
-	float: left;
-	width: 100%;
-}*/
-/*section header h1 {
-	font-size: 18px;
-	margin: 0 0 12px;
-}*/
-/*.portfolio p {
-	min-height: 80px;
-}*/
-/*blockquote {
-	border-left: 4px solid #B24934;
-	padding-left: 10px;
-	margin-left: 20px;
-}*/
 dt {
 	font-weight: 900;
 }
@@ -106,120 +80,59 @@ dt {
 	box-shadow: 0 3px 12px #ddd;
 }
 
-/* experience */
-.experience ul {
-	margin: 18px 0;
-}
-.experience li {
-	line-height: 30px;
-	border:  1px solid #ddd;
-	border-width: 1px 0;
-	padding:  0 5px;
-}
-.experience li + li {
-	border-width: 0 0 1px;
-}
-
-footer {
-	text-align: center;
-	color: #666;
-	font-size: 10px;
-	clear: both;
-}
-.rate1,
-.rate2,
-.rate3 {
-	background: url(http://images.functionfirst.co.uk/rate.gif) no-repeat 95% 12px;
-}
-.rate2 {
-	background-position: 95% -18px;
-}
-.rate3 {
-	background-position: 95% -48px;
-}
-	
-/* #Media Queries
-================================================== */
-/* Wide screen displays */
-@media only screen and (min-width: 1192px) {
-
-}
-/* Desktops and laptops */
-@media only screen and (min-width: 960px) {
-	.ext-links {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-	.portfolio article {
+.portfolio {
+	article {
 		float:  left;
-		width: 400px;
-		margin: 40px 40px 0 0;
+		width: 21%;
+		margin: 2%;
 		height: 500px;
 		position: relative;
 		background: #fff;
 		border: 1px solid #e8e8e8;
 		box-shadow: 0 1px 5px #eee;
 
-		h1 {
-			font-size: 18px;
+		header {
+			h1 {
+				font-size: 18px;
+				margin: 20px;
+			}
+		}
+
+		section {
 			margin: 20px;
 		}
-	}
 
-	.portfolio section {
-		margin: 20px;
+		dl {
+			font-size: 12px;
+		}
+		dt {
+			float: left;
+			width: 100px;
+		}
+		dd {
+			margin-left: 100px;
+		}
 	}
-
-
-	dl {
-		font-size: 12px;
-	}
-	dt {
-		float: left;
-		width: 100px;
-	}
-	dd {
-		margin-left: 100px;
-	}
-	.case-study-article {
-		margin: 43px;
-	}
-	.case-study-content {
-		float: left;
-		width: 50%;
-	}
-	.case-study-aside {
-		float: left;
-		width: 40%;
-		margin-left: 10%;
-	}
-	.content {
-		padding:  20px 20px 20px 90px;
+}
+	
+/* #Media Queries
+================================================== */
+@media only screen and (min-width: 960px) {
+	.portfolio article {
+		width: 29%;
 	}
 }
 
-/* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {
-	.case-study-article {
-		padding: 43px 0 0;
-	}
+@media only screen and (min-width: 1280px) {
 	.portfolio article {
-		float: left;
-		width: 100%;
-		margin: 0 0 40px;
+		width: 21%;
 	}
-	.portfolio header {
-		float: left;
+}
+
+@media only screen and (max-width: 959px) {
+	.portfolio article {
+		width: 46%;
 	}
-	.portfolio section {
-		margin: 30px 0 0 240px;
-		float: none;
-		width: auto;
-	}
-	/*.portfolio p {
-		min-height: 0;
-	}*/
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -229,23 +142,25 @@ footer {
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+	.portfolio article dt {
+		float: none;
+	}
 
+	.portfolio article dd {
+		margin: 0;
+	}
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-	.portfolio header {
+	.portfolio article {
 		float: none;
+		width: auto;
+		margin: 2% 0;
 	}
-	.portfolio section {
-		margin: 0;
-	}
-	section {
-		margin: 0 0 20px;
-	}
-	.portfolio img {
-		 width: 100%;
-		 max-width: 423px;
+
+	.content {
+		padding: 80px 20px 20px;
 	}
 }
 		

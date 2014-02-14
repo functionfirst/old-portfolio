@@ -1,8 +1,10 @@
 <?php
-	require "lessc.inc.php";
-	$less = new lessc;
-	$less->addImportDir("/css");
-	$less->compile("default.less", "default.less.css");
+	// require "lessc.inc.php";
+	// $less = new lessc;
+	// // $less->addImportDir("/css");
+	// // $less->compile("default.less", "default.less.css");
+
+	// $less->compileFile("css/default.less", "css/default.less.css");
 ?>
 
 <!DOCTYPE html> 
@@ -41,11 +43,11 @@
 		<a href="#" class="nav-button" data-navigation="open"><span>Menu</span></a>
 	
 		<ul>
-			<li><a href="#"><span data-hover="About">About</span></a></li>
-			<li><a href="#"><span data-hover="Experience">Experience</span></a></li>
-			<li><a href="#"><span data-hover="Skills">Skills</span></a></li>
+			<li><a data-show="true" href="#about"><span data-hover="About">About</span></a></li>
+			<li><a data-show="true" href="#experience"><span data-hover="Experience">Experience</span></a></li>
+			<li><a data-show="true" href="#skills"><span data-hover="Skills">Skills</span></a></li>
 			<li><a href="http://uk.linkedin.com/in/aljenks"><span data-hover="LinkedIn">LinkedIn</span></a></li>
-			<li><a href="https://docs.google.com/document/d/1xtrGsfAjW8s9hdqVEkJMyMfiJOYWCiiVVHyKB5Oxtes/edit?usp=sharing"><span data-hover="Download CV">Download CV</span></a></li>
+			<li><a href="https://docs.google.com/document/d/1xtrGsfAjW8s9hdqVEkJMyMfiJOYWCiiVVHyKB5Oxtes/edit?usp=sharing"><span data-hover="Review CV">Review CV</span></a></li>
 		</ul>
 	</nav>
 
