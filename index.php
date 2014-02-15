@@ -77,12 +77,12 @@
 			<header>
 				<a href="http://www.youtube.com/watch?v=GVw8rwqRx5o" class="view"><span data-hover="Watch the demo (YouTube)"><img src="http://images.functionfirst.co.uk/infocapture.jpg" alt="The inside track on the Claromentis 7.0 redesign" /></span></a>
 
-				<h1><a href="http://www.youtube.com/watch?v=GVw8rwqRx5o">Form Builder - Infocapture</a></h1>
+				<h1><a href="http://www.youtube.com/watch?v=GVw8rwqRx5o">Claromentis - Infocapture</a></h1>
 			</header>
 
 			<section>
 				<p>
-					Early stage proof of concept for business process management application, Infocapture
+					Video of a drag and drop form building tool. This is an early stage proof of concept that didn't make it to release.
 				</p>
 
 			    <dl>

@@ -48,6 +48,7 @@
 			<li><a data-show="true" href="#skills"><span data-hover="Skills">Skills</span></a></li>
 			<li><a href="http://uk.linkedin.com/in/aljenks"><span data-hover="LinkedIn">LinkedIn</span></a></li>
 			<li><a href="https://docs.google.com/document/d/1xtrGsfAjW8s9hdqVEkJMyMfiJOYWCiiVVHyKB5Oxtes/edit?usp=sharing"><span data-hover="Review CV">Review CV</span></a></li>
+			<li><a href="alan_jenkins_cv.pdf"><span data-hover="Download as PDF">Download as PDF</span></a></li>
 		</ul>
 	</nav>
 
