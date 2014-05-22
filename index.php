@@ -116,7 +116,7 @@
 		</article>
 		<article>
 			<header>
-				<a href="/carioca-digital" class="view"><span data-hover="View the Logo"><img src="http://images.functionfirst.co.uk/carioca_thumb.jpg" alt="Thumbnail for the Carioca Digital logo" /></span></a>
+				<a href="/carioca-digital" class="view"><span data-hover="View the Logo"><img src="http://images.functionfirst.co.uk/cd_thumb.jpg" alt="Thumbnail for the Carioca Digital logo" /></span></a>
 
 				<h1><a href="/carioca-digital">Carioca Digital - Logo</a></h1>
 			</header>

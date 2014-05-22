@@ -10,7 +10,7 @@
 
 	<p>Initial concept and logo design for Carioca Digital using Photoshop.</p>
 
-	<img src="http://images.functionfirst.co.uk/carioca_digital_logo.jpg" alt="">
+	<img src="http://images.functionfirst.co.uk/cd_logo.jpg" alt="">
 </div>
 
 <?php require "../includes/footer.php"; ?>
