@@ -36,7 +36,7 @@
 		<a href="#" class="nav-button" ng-click="main.nav.toggle()" data-navigation="open"><span>Menu</span></a>
 	
 		<ul>
-			<li><a data-show="true" href="#about"><span data-hover="About">About</span></a></li>
+			<li><a data-show="true" href="/about" ng-click="main.nav.hide()"><span data-hover="About">About</span></a></li>
 			<li><a data-show="true" href="#experience"><span data-hover="Experience">Experience</span></a></li>
 			<li><a data-show="true" href="#skills"><span data-hover="Skills">Skills</span></a></li>
 			<li><a href="http://uk.linkedin.com/in/aljenks"><span data-hover="LinkedIn">LinkedIn</span></a></li>
@@ -44,7 +44,6 @@
 			<li><a href="alan_jenkins_cv.pdf"><span data-hover="Download as PDF">Download as PDF</span></a></li>
 		</ul>
 	</nav>
-
 
 	<div class="content"  ng-class="{'overlay-open': main.nav.state}" ng-click="main.nav.hide()">
 		<header class="header">
@@ -125,6 +124,7 @@
 	<!-- controllers -->
 	<script src="/public/app/controllers/mainCtrl.js"></script>
 	<script src="/public/app/controllers/homeCtrl.js"></script>
+	<script src="/public/app/controllers/aboutCtrl.js"></script>
 
 	<!-- services -->
 	<script src="/public/app/services/portfolioService.js"></script>
