@@ -1,26 +1,31 @@
-<div ng-show="home.loading">
-....LOADING....	
+<div class="loading" ng-show="home.loading">
+	<div class="loader">
+		<img src="/public/assets/images/oval.svg" />
+	</div>
 </div>
 	
 <section class="portfolio">
-	<article ng-repeat="client in home.clients">
-		<header>
-			<a href="{{client.url}}" class="view"><img ng-src="/public/assets/images/{{client.image}}" alt="Image showing an example from {{client.name}}"></a>
+	<article class="tile" ng-repeat="client in home.clients">
+		<a href="{{client.url}}">
+			<header>
+				<h1>{{client.name}}</h1>
 
-			<h1><a href="{{client.url">{{client.name}}</a></h1>
-		</header>
+				<section>
+					<p>
+						{{client.description}}
+					</p>
 
-		<section>
-			<p>
-				{{client.description}}
-			</p>
-
-			<dl>
-				<dt>Role</dt>
-					<dd>{{client.role}}</dd>
-				<dt>Technolgoy</dt>
-					<dd>{{client.technology}}</dd>
-			</dl>
-		</section>
+					<dl>
+						<dt>Role</dt>
+							<dd>{{client.role}}</dd>
+						<dt>Technology</dt>
+							<dd>{{client.technology}}</dd>
+					</dl>
+				</section>
+			</header>
+			<section>
+				<img ng-src="/public/assets/images/{{client.image}}" alt="Image showing an example from {{client.name}}">
+			</section>
+		</a>
 	</article>
 </section>

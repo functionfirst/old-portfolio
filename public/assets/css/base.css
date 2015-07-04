@@ -1,0 +1,10 @@
+body {
+	background: #ee5e10;
+	color: #666;
+	font: 14px/1.6em "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+a {	
+	text-decoration:none;
+	outline: 0;
+}

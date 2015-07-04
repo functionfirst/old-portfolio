@@ -8,12 +8,12 @@ angular.module('appRoutes', ['ngRoute'])
 			controller : 'HomeController',
 			controllerAs : 'home'
 		})
-		// about
-		.when('/about', {
-			templateUrl : '/public/app/views/pages/about/index.html',
-			controller : 'AboutController',
-			controllerAs : 'about'
-		});
+		// // filter
+		// .when('/filter', {
+		// 	templateUrl : '/public/app/views/pages/home.html',
+		// 	controller : 'HomeController',
+		// 	controllerAs : 'home'
+		// });
 
 		// get rid of the hash in url
 		$locationProvider.html5Mode(true);

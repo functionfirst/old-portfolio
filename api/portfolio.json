@@ -34,13 +34,6 @@
 	"role" :"Designer/UI",
 	"technology" :"Axure"
 },{
-	"name" :"Claromentis - Infocapture (2012)",
-	"image" :"infocapture.jpg",
-	"url" :"http://www.youtube.com/watch?v=GVw8rwqRx5o",
-	"description" :"Video of a drag and drop form building tool. This is an early stage proof of concept that didn't make it to release.",
-	"role" :"Designer/Developer",
-	"technology" :"HTML5, CSS3 and jQuery"
-},{
 	"name" :"Carioca Digital - Logo",
 	"image" :"cd_thumb.jpg",
 	"url" :"/carioca-digital",
@@ -61,4 +54,11 @@
 	"description" :"Low-fidelity prototype for the Planet Explore mobile interface. Built using Axure.",
 	"role" :"Designer/UI",
 	"technology" :"Axure"
+},{
+	"name" :"Claromentis - Infocapture (2012)",
+	"image" :"infocapture.jpg",
+	"url" :"http://www.youtube.com/watch?v=GVw8rwqRx5o",
+	"description" :"Video of a drag and drop form building tool. This is an early stage proof of concept that didn't make it to release.",
+	"role" :"Designer/Developer",
+	"technology" :"HTML5, CSS3 and jQuery"
 }]
