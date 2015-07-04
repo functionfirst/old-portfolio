@@ -32,8 +32,8 @@
 </head>
 <body ng-app="portfolioApp" ng-controller="MainController as main">
 
-	<nav id="nav" class="nav-menu nav-close">
-		<a href="#" class="nav-button" data-navigation="open"><span>Menu</span></a>
+	<nav id="nav" class="nav-menu nav-close" ng-class="{'nav-open': main.nav}">
+		<a href="#" class="nav-button" ng-click="main.toggleNav()" data-navigation="open"><span>Menu</span></a>
 	
 		<ul>
 			<li><a data-show="true" href="#about"><span data-hover="About">About</span></a></li>
@@ -46,15 +46,14 @@
 	</nav>
 
 
-<div class="content">
-	<header class="header">
-		<h1>functionfirst</h1>
-		<h2>the web portfolio of alan jenkins</h2>
-	</header>
+	<div class="content"  ng-class="{'overlay-open': main.nav}">
+		<header class="header">
+			<h1>functionfirst</h1>
+			<h2>the web portfolio of alan jenkins</h2>
+		</header>
 
-	<div ng-view></div>
-</div>
-
+		<div ng-view></div>
+	</div>
 
 	<aside>
 		<section id="about" class="about">
