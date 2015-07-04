@@ -33,30 +33,24 @@
 <body ng-app="portfolioApp" ng-controller="MainController as main">
 	<header class="header">
 		<div class="header-container">
-			<ul class="thumb">
-				<li>
-					<a href="#" ng-click="main.nav.class = 'nav-thumb'" class="nail"><span></span><span></span><span></span><span></span></a>
-				</li>
-				<li>
-					<a href="#" ng-click="main.nav.class = 'nav-list'" class="list"><span></span><span></span><span></span></a>
-				</li>
-				<li>
-					<a href="#" ng-click="main.nav.class = 'nav-mixed'" class="mixed"><span></span><span></span><span></span></a>
-				</li>
-			</ul>
+			<h1 class="header-title">
+				functionfirst
+				<span class="header-subtitle">the web portfolio of alan jenkins</span>
+			</h1>
 
 			<ul class="nav nav-secondary">
-				<li><span class="nav-text">Order by</span></li>
+				<h4>Order by..</h4>
 				<li class="active"><a href="#">Most Recent</a></li>
 				<li><a href="#">Alphabetically</a></li>
 				
-				<li><a href="http://uk.linkedin.com/in/aljenks"><span data-hover="LinkedIn">LinkedIn</span></a></li>
+		<!-- 		<li><a href="http://uk.linkedin.com/in/aljenks"><span data-hover="LinkedIn">LinkedIn</span></a></li>
 				<li><a href="https://docs.google.com/document/d/1xtrGsfAjW8s9hdqVEkJMyMfiJOYWCiiVVHyKB5Oxtes/edit?usp=sharing"><span data-hover="Review CV">Review CV</span></a></li>
-				<li><a href="alan_jenkins_cv.pdf"><span data-hover="Download as PDF">Download as PDF</span></a></li>
+				<li><a href="alan_jenkins_cv.pdf"><span data-hover="Download as PDF">Download as PDF</span></a></li> -->
 			</ul>
 
 			<ul class="nav">
-				<li ng-class="{active:main.filter === 'all'}"><a href="/">All</a></li>
+				<h4>Select a filter..</h4>
+				<li ng-class="{active:main.filter === 'all'}"><a href="/" ng-click="main.setFilter('all')">All</a></li>
 				<li ng-class="{active:main.filter == filter}" ng-repeat="filter in main.filters">
 					<a ng-click="main.setFilter(filter)" href="">{{filter}}</a>
 				</li>
@@ -64,16 +58,9 @@
 		</div>
 	</header>
 
-	<div class="content"  ng-class="main.nav.class" ng-click="main.nav.hide()">
-		<!-- <header class="header">
-			<h1>functionfirst</h1>
-			<h2>the web portfolio of alan jenkins</h2>
-		</header> -->
-	
+	<div class="content" ng-click="main.nav.hide()">
 		<div ng-view></div>
 	</div>
-
-	<div class="modal-overlay"></div>
 
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="/public/assets/lib/angularjs/angular.min.js"></script>

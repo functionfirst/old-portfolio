@@ -1,3 +1,9 @@
+*{
+	-webkit-box-sizing: 	border-box;
+	-moz-box-sizing: 		border-box;
+	box-sizing: 			border-box
+}
+
 body {
 	background: #ee5e10;
 	color: #666;

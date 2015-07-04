@@ -2,9 +2,8 @@ angular.module('mainCtrl', ['portfolioService'])
 
 .controller('MainController', function(Portfolio){
 	var main = this;
-	main.nav = {
-		class : 'nav-thumb'
-	};
+
+	// FILTERING
 	main.filter = 'all';
 	main.filters = ['c#','.NET', 'node.js','css','javascript','socket.io','photoshop'];
 
