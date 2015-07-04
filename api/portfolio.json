@@ -5,7 +5,7 @@
 	"description" :"Live auction application that uses socket.io to instantly update connected client machines when someone submits a bid.",
 	"role" :"Designer/Developer",
 	"technology" :"MEAN stack leveraging socket.io for live updates",
-	"keywords" : ["node.js", "monogodb", "angular.js", "css", "html", "socket.io"]
+	"keywords" : ["node.js", "nosql", "angular.js", "css", "html", "socket.io", "javascript"]
 },{
 	"name" :"Buildmate - Website",
 	"image" :"buildmate_web.jpg",
@@ -13,54 +13,61 @@
 	"description" :"Website design and build for Buildmate Software Ltd. Included custom development of a Blog and Knowledge Base application.",
 	"role" :"Designer/Developer",
 	"technology" :"ASP.NET C# MVC, SQL Server, Photoshop, HTML5 &amp; CSS3",
-	"keywords" : ["css", "c#", "SQL", "photoshop", "html"]
+	"keywords" : [".net", "css", "c#", "sql", "photoshop", "html"]
 },{
 	"name" :"Buildmate - Application",
 	"image" :"buildmate.jpg",
 	"url" :"https://buildmateapp.com",
 	"description" :"A web-based application that enables building companies and tradesmen to create estimates and tender documents.",
 	"role" :"Designer/Developer",
-	"technology" :"ASP.NET VB Web Forms, Telerik .NET AJAX Controls, SQL Server, Photoshop, HTML5 &amp; CSS3"
+	"technology" :"ASP.NET VB Web Forms, Telerik .NET AJAX Controls, SQL Server, Photoshop, HTML5 &amp; CSS3",
+	"keywords" : [".net", "sql", "html", "css"]
 },{
 	"name" :"Buildmate - Mobile",
 	"image" :"build_mobile.jpg",
 	"url" :"/buildmate-mobile",
 	"description" :"Initial stage dashboard mock-up for the Buildmate iPhone application, built using Photoshop.",
 	"role" :"Designer",
-	"technology" :"Photoshop"
+	"technology" :"Photoshop",
+	"keywords" : ["photoshop"]
 },{
 	"name" :"Claromentis - Pages Prototype",
 	"image" :"pages_proto.jpg",
 	"url" :"http://prototypes.claromentis.com/pages2/",
 	"description" :"Initial stage dashboard mock-up for the Buildmate iPhone application, built using Photoshop.",
 	"role" :"Designer/UI",
-	"technology" :"Axure"
+	"technology" :"Axure",
+	"keywords" : ["axure"]
 },{
 	"name" :"Carioca Digital - Logo",
 	"image" :"cd_thumb.jpg",
 	"url" :"/carioca-digital",
 	"description" :"Logo design for a start-up technology company in Rio de Janeiro.",
 	"role" :"Designer",
-	"technology" :"Photoshop"
+	"technology" :"Photoshop",
+	"keywords" : ["photoshop"]
 },{
 	"name" :"Timesheets - Prototype (2014)",
 	"image" :"timesheets.jpg",
 	"url" :"http://prototypes.claromentis.com/timesheets/",
 	"description" :"Low-fidelity prototype for a Timesheet module based on the Claromentis framework. Built using Axure.",
 	"role" :"Designer/UI",
-	"technology" :"Axure"
+	"technology" :"Axure",
+	"keywords" : ["axure"]
 },{
 	"name" :"Planet Explore - Prototype",
 	"image" :"planet_explore.jpg",
 	"url" :"/prototypes/planet_explore_mobile/",
 	"description" :"Low-fidelity prototype for the Planet Explore mobile interface. Built using Axure.",
 	"role" :"Designer/UI",
-	"technology" :"Axure"
+	"technology" :"Axure",
+	"keywords" : ["axure"]
 },{
 	"name" :"Claromentis - Infocapture (2012)",
 	"image" :"infocapture.jpg",
 	"url" :"http://www.youtube.com/watch?v=GVw8rwqRx5o",
 	"description" :"Video of a drag and drop form building tool. This is an early stage proof of concept that didn't make it to release.",
 	"role" :"Designer/Developer",
-	"technology" :"HTML5, CSS3 and jQuery"
+	"technology" :"HTML5, CSS3 and jQuery",
+	"keywords" : ["html", "css", "jquery"]
 }]

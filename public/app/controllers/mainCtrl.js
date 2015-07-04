@@ -6,7 +6,7 @@ angular.module('mainCtrl', ['portfolioService', 'cacheService'])
 	// FILTERING
 	CacheService.put('filter', 'all');
 	main.filter = CacheService.get('filter');
-	main.filters = ['c#','.NET', 'node.js','css','javascript','socket.io','photoshop'];
+	main.filters = ['axure', 'css', 'c#', 'html', 'javascript', 'node.js', '.net', 'photoshop', 'socket.io']
 
 	main.setFilter = function(filter){
 		main.filter = filter;
