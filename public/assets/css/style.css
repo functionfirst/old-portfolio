@@ -3,22 +3,37 @@
 @import url('loading.css');
 @import url('header.css');
 @import url('nav.css');
+@import url('animate.css');
+
+body {
+	overflow: hidden;
+}
 
 .content {
 	margin: 80px auto 0;
 	padding: 20px;
+	overflow: hidden;
+	max-width:;
 }
 
 .content.list {
 
 }
 
-
-
-
-
 /* tile */
 .tile {
+	float: left;
+	width: 33%;
+	margin: 2%;
+	/*height: 300px;*/
+	position: relative;
+	background: #fff;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	padding: 20px;
+}
+
+/* PORTFOLIO */
+.portfolio-article {
 	float: left;
 	width: 21%;
 	margin: 2%;
@@ -26,9 +41,12 @@
 	position: relative;
 	background: #fff;
 	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	padding: 20px;
 }
-/* PORTFOLIO */
-.portfolio article header {
+.portfolio-link {
+	display: block;
+}
+.portfolio-details {
 	position: absolute;
 	bottom: 0;
 	z-index: 2;
@@ -40,26 +58,20 @@
 	-o-transition: height .3s ease-in-out;
 	transition: height .3s ease-in-out;
 }
-.portfolio article header h1 {
-	/*font-size: 18px;*/
+.portfolio-header {
 	font-size: 12px;
 	text-transform: uppercase;
-	
 }
-.portfolio article header h1 a {
-	display: block;
-	/*padding: 20px;*/
-}
-.portfolio article:hover header {
+
+.portfolio-article:hover .portfolio-details {
 	height: 300px;
 }
 
-.portfolio article header section {
-	/*margin: 0 20px 20px;*/
+.portfolio-description {
 	color: #666;
 }
 
-.portfolio article{
+/*.portfolio article{
 	float: left;
 	width: 21%;
 	margin: 2%;
@@ -67,7 +79,7 @@
 	position: relative;
 	background: #fff;
 	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
-}
+}*/
 
 
 /* *************************************************************************************************** */

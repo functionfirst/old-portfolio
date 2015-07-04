@@ -5,12 +5,12 @@
 </div>
 	
 <section class="portfolio">
-	<article class="tile" ng-repeat="client in portfolio.clients | technologyFilter : portfolio.filter()">
-		<a href="{{client.url}}">
-			<header>
-				<h1>{{client.name}}</h1>
+	<article class="portfolio-article" ng-repeat="client in portfolio.clients | technologyFilter : portfolio.filter()">
+		<a href="{{client.url}}" class="portfolio-link">
+			<section class="portfolio-details">
+				<h1 class="portfolio-header">{{client.name}}</h1>
 
-				<section>
+				<section class="portfolio-description">
 					<p>{{client.description}}</p>
 
 					<dl>
@@ -20,10 +20,8 @@
 							<dd>{{client.technology}}</dd>
 					</dl>
 				</section>
-			</header>
-			<section>
-				<img ng-src="/public/assets/images/{{client.image}}" alt="Image showing an example from {{client.name}}">
 			</section>
+			<img ng-src="/public/assets/images/{{client.image}}" alt="Image showing an example from {{client.name}}">
 		</a>
 	</article>
 </section>

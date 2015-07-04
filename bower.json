@@ -2,8 +2,13 @@
   "name": "functionfirst",
   "description": "Portfolio website",
   "version": "1.0.0",
+  "authors": [
+    "Alan Jenkins <alan@functionfirst.co.uk>"
+  ],
+  "license": "MIT",
   "dependencies": {
-    "angular": "~1.3.14",
+    "angular": "~1.4.1",
     "angular-route": "~1.3.14",
+    "angular-animate": "~1.4.1"
   }
 }
