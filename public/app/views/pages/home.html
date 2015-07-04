@@ -1,0 +1,26 @@
+<div ng-show="home.loading">
+....LOADING....	
+</div>
+	
+<section class="portfolio">
+	<article ng-repeat="client in home.clients">
+		<header>
+			<a href="{{client.url}}" class="view"><img ng-src="/public/assets/images/{{client.image}}" alt="Image showing an example from {{client.name}}"></a>
+
+			<h1><a href="{{client.url">{{client.name}}</a></h1>
+		</header>
+
+		<section>
+			<p>
+				{{client.description}}
+			</p>
+
+			<dl>
+				<dt>Role</dt>
+					<dd>{{client.role}}</dd>
+				<dt>Technolgoy</dt>
+					<dd>{{client.technology}}</dd>
+			</dl>
+		</section>
+	</article>
+</section>

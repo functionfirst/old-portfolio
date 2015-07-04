@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<!--[if lt IE 7]><html lang="en" class="ie6"><![endif]--> 
+<!--[if IE 7]><html lang="en" class="ie7"><![endif]--> 
+<!--[if IE 8]><html lang="en" class="ie8"><![endif]--> 
+<!--[if IE 9]><html lang="en" class="ie9"><![endif]--> 
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+    <title>Welcome to function first - a web design and development portfolio</title>
+
+    <!-- meta data -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="functionfirst is the online portfolio of Web Designer and Developer, Alan Jenkins. As a professional Web Designer and Developer since 2000 I have worked with a variety of SME's and successful brands." />
+    <meta name="keywords" content="online portfolio, web designer, web developer, web design, designer, design, developer, portfolio" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Alan Jenkins, alan@functionfirst.co.uk" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+	<base href="/">
+
+    <!-- css -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="/public/assets/css/style.css" type="text/css" media="all" />
+
+	<!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--> 
+	
+	<!--[if lt IE 9]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+</head>
+<body ng-app="portfolioApp">
+
+	<nav id="nav" class="nav-menu nav-close">
+		<a href="#" class="nav-button" data-navigation="open"><span>Menu</span></a>
+	
+		<ul>
+			<li><a data-show="true" href="#about"><span data-hover="About">About</span></a></li>
+			<li><a data-show="true" href="#experience"><span data-hover="Experience">Experience</span></a></li>
+			<li><a data-show="true" href="#skills"><span data-hover="Skills">Skills</span></a></li>
+			<li><a href="http://uk.linkedin.com/in/aljenks"><span data-hover="LinkedIn">LinkedIn</span></a></li>
+			<li><a href="https://docs.google.com/document/d/1xtrGsfAjW8s9hdqVEkJMyMfiJOYWCiiVVHyKB5Oxtes/edit?usp=sharing"><span data-hover="Review CV">Review CV</span></a></li>
+			<li><a href="alan_jenkins_cv.pdf"><span data-hover="Download as PDF">Download as PDF</span></a></li>
+		</ul>
+	</nav>
+
+
+<div class="content">
+	<header class="header">
+		<h1>functionfirst</h1>
+		<h2>the web portfolio of alan jenkins</h2>
+	</header>
+
+	<div ng-view></div>
+</div>
+
+
+	<aside>
+		<section id="about" class="about">
+			<a href="#" class="close-button" data-aside="close"><span>Close</span></a>
+
+			<h1>About</h1>
+    
+        	<dl>
+        		<dt>Name</dt>
+        			<dd>Alan Jenkins</dd>
+        		<dt>Current role</dt>
+        			<dd>Product Manager</dd>
+        		<dt>Status</dt>
+        			<dd>Currently working for the folks at <a href="http://claromentis.com">Claromentis.com</a></dd>
+        	</dl>
+
+            <p>
+            	I'm a T-shaped designer, developer and collaborator with a passion for iterative processes and a common-sense approach to management and business.
+            </p>
+            
+            <p>
+            	With extensive experience of the full project life-cycle, I have successfully contributed to solo and team projects in rapidly changing environments.
+            </p>
+		 </section>
+
+		<section id="experience" class="experience">
+			<a href="#" class="close-button" data-aside="close"><span>Close</span></a>
+			<h1>Experience</h1>
+			
+			<ul>
+				<li>Website design and production</li>
+				<li>User-interface design</li>
+				<li>Wire-framing</li>
+				<li>Hi &amp; Lo-fidelity Prototyping</li>
+				<li>Cross-browser testing &amp; fixing</li>
+				<li>Managing software teams</li>
+				<li>CMS, CRM &amp; E-commerce</li>
+				<li>Technical documentation</li>
+			</ul>
+		</section>
+		
+	    <section id="skills" class="skills">
+	    	<a href="#" class="close-button" data-aside="close"><span>Close</span></a>
+
+			<h1>Skills</h1>
+        
+            <ul>
+                <li class="rate3">HTML5/CSS3</li>
+                <li class="rate3">jQuery</li>
+                <li class="rate3">Photoshop &amp; Fireworks</li>
+                <li class="rate3">Prototyping</li>
+                <li class="rate2">Javascript</li>
+                <li class="rate2">Axure</li>
+                <li class="rate2">Microsoft SQL Server</li>
+                <li class="rate2">.NET</li>
+                <li class="rate2">Version Control (GIT/CVS)</li>
+                <li class="rate2">Classic ASP (VB)</li>
+            </ul>
+		</section>
+	</aside>
+
+
+	<div class="modal-overlay"></div>
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="/public/assets/lib/angularjs/angular.min.js"></script>
+	<script src="/public/assets/lib/angular-route/angular-route.min.js"></script>
+
+	<!-- controllers -->
+	<script src="/public/app/controllers/homeCtrl.js"></script>
+
+	<!-- services -->
+	<script src="/public/app/services/portfolioService.js"></script>
+	
+	<!-- app -->
+	<script src="/public/app/appRoutes.js"></script>
+	<script src="/public/app/app.js"></script>
+</body>
+</html>

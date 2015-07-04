@@ -1,0 +1,64 @@
+[{
+	"name" :"Gulf Plates",
+	"image" :"gulfplate.jpg",
+	"url" :"/gulfplates",
+	"description" :"Live auction application that uses socket.io to instantly update connected client machines when someone submits a bid.",
+	"role" :"Designer/Developer",
+	"technology" :"MEAN stack leveraging socket.io for live updates"
+},{
+	"name" :"Buildmate - Website",
+	"image" :"buildmate_web.jpg",
+	"url" :"http://getbuildmate.com",
+	"description" :"Website design and build for Buildmate Software Ltd. Included custom development of a Blog and Knowledge Base application.",
+	"role" :"Designer/Developer",
+	"technology" :"ASP.NET C# MVC, SQL Server, Photoshop, HTML5 &amp; CSS3"
+},{
+	"name" :"Buildmate - Application",
+	"image" :"buildmate.jpg",
+	"url" :"https://buildmateapp.com",
+	"description" :"A web-based application that enables building companies and tradesmen to create estimates and tender documents.",
+	"role" :"Designer/Developer",
+	"technology" :"ASP.NET VB Web Forms, Telerik .NET AJAX Controls, SQL Server, Photoshop, HTML5 &amp; CSS3"
+},{
+	"name" :"Buildmate - Mobile",
+	"image" :"build_mobile.jpg",
+	"url" :"/buildmate-mobile",
+	"description" :"Initial stage dashboard mock-up for the Buildmate iPhone application, built using Photoshop.",
+	"role" :"Designer",
+	"technology" :"Photoshop"
+},{
+	"name" :"Claromentis - Pages Prototype",
+	"image" :"pages_proto.jpg",
+	"url" :"http://prototypes.claromentis.com/pages2/",
+	"description" :"Initial stage dashboard mock-up for the Buildmate iPhone application, built using Photoshop.",
+	"role" :"Designer/UI",
+	"technology" :"Axure"
+},{
+	"name" :"Claromentis - Infocapture (2012)",
+	"image" :"infocapture.jpg",
+	"url" :"http://www.youtube.com/watch?v=GVw8rwqRx5o",
+	"description" :"Video of a drag and drop form building tool. This is an early stage proof of concept that didn't make it to release.",
+	"role" :"Designer/Developer",
+	"technology" :"HTML5, CSS3 and jQuery"
+},{
+	"name" :"Carioca Digital - Logo",
+	"image" :"cd_thumb.jpg",
+	"url" :"/carioca-digital",
+	"description" :"Logo design for a start-up technology company in Rio de Janeiro.",
+	"role" :"Designer",
+	"technology" :"Photoshop"
+},{
+	"name" :"Timesheets - Prototype (2014)",
+	"image" :"timesheets.jpg",
+	"url" :"http://prototypes.claromentis.com/timesheets/",
+	"description" :"Low-fidelity prototype for a Timesheet module based on the Claromentis framework. Built using Axure.",
+	"role" :"Designer/UI",
+	"technology" :"Axure"
+},{
+	"name" :"Planet Explore - Prototype",
+	"image" :"planet_explore.jpg",
+	"url" :"/prototypes/planet_explore_mobile/",
+	"description" :"Low-fidelity prototype for the Planet Explore mobile interface. Built using Axure.",
+	"role" :"Designer/UI",
+	"technology" :"Axure"
+}]
