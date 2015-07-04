@@ -5,7 +5,7 @@
 </div>
 	
 <section class="portfolio">
-	<article class="tile" ng-repeat="client in home.clients">
+	<article class="tile" ng-repeat="client in home.clients | technologyFilter : 'socket.io'">
 		<a href="{{client.url}}">
 			<header>
 				<h1>{{client.name}}</h1>

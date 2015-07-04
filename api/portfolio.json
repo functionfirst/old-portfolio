@@ -4,14 +4,16 @@
 	"url" :"/gulfplates",
 	"description" :"Live auction application that uses socket.io to instantly update connected client machines when someone submits a bid.",
 	"role" :"Designer/Developer",
-	"technology" :"MEAN stack leveraging socket.io for live updates"
+	"technology" :"MEAN stack leveraging socket.io for live updates",
+	"keywords" : ["node.js", "monogodb", "angular.js", "css", "html", "socket.io"]
 },{
 	"name" :"Buildmate - Website",
 	"image" :"buildmate_web.jpg",
 	"url" :"http://getbuildmate.com",
 	"description" :"Website design and build for Buildmate Software Ltd. Included custom development of a Blog and Knowledge Base application.",
 	"role" :"Designer/Developer",
-	"technology" :"ASP.NET C# MVC, SQL Server, Photoshop, HTML5 &amp; CSS3"
+	"technology" :"ASP.NET C# MVC, SQL Server, Photoshop, HTML5 &amp; CSS3",
+	"keywords" : ["css", "c#", "SQL", "photoshop", "html"]
 },{
 	"name" :"Buildmate - Application",
 	"image" :"buildmate.jpg",
