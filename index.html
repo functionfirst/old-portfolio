@@ -39,21 +39,17 @@
 			</h1>
 
 			<ul class="nav nav-secondary">
-				<h4>Order by..</h4>
-				<li class="active"><a href="#">Most Recent</a></li>
-				<li><a href="#">Alphabetically</a></li>
-				
-		<!-- 		<li><a href="http://uk.linkedin.com/in/aljenks"><span data-hover="LinkedIn">LinkedIn</span></a></li>
-				<li><a href="https://docs.google.com/document/d/1xtrGsfAjW8s9hdqVEkJMyMfiJOYWCiiVVHyKB5Oxtes/edit?usp=sharing"><span data-hover="Review CV">Review CV</span></a></li>
-				<li><a href="alan_jenkins_cv.pdf"><span data-hover="Download as PDF">Download as PDF</span></a></li> -->
-			</ul>
-
-			<ul class="nav">
 				<h4>Select a filter..</h4>
 				<li ng-class="{active:main.filter === 'all'}"><a href="/" ng-click="main.setFilter('all')">All</a></li>
 				<li ng-class="{active:main.filter == filter}" ng-repeat="filter in main.filters">
 					<a ng-click="main.setFilter(filter)" href="">{{filter}}</a>
 				</li>
+			</ul>
+
+			<ul class="nav">
+				<li class="active"><a href="/">Portfolio</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/cv">CV</a></li>
 			</ul>
 		</div>
 	</header>
@@ -70,6 +66,7 @@
 	<script src="/public/app/controllers/mainCtrl.js"></script>
 	<script src="/public/app/controllers/homeCtrl.js"></script>
 	<script src="/public/app/controllers/aboutCtrl.js"></script>
+	<script src="/public/app/controllers/cvCtrl.js"></script>
 
 	<!-- services -->
 	<script src="/public/app/services/portfolioService.js"></script>

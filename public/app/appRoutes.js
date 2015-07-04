@@ -8,12 +8,18 @@ angular.module('appRoutes', ['ngRoute'])
 			controller : 'HomeController',
 			controllerAs : 'home'
 		})
-		// // filter
-		// .when('/filter', {
-		// 	templateUrl : '/public/app/views/pages/home.html',
-		// 	controller : 'HomeController',
-		// 	controllerAs : 'home'
-		// });
+		// filter
+		.when('/about', {
+			templateUrl : '/public/app/views/pages/about/index.html',
+			controller : 'AboutController',
+			controllerAs : 'about'
+		})
+		// filter
+		.when('/cv', {
+			templateUrl : '/public/app/views/pages/cv/index.html',
+			controller : 'CVController',
+			controllerAs : 'cv'
+		});
 
 		// get rid of the hash in url
 		$locationProvider.html5Mode(true);

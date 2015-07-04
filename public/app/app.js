@@ -3,5 +3,6 @@ var app = angular.module('portfolioApp', [
 	'mainCtrl',
 	'homeCtrl',
 	'aboutCtrl',
+	'cvCtrl',
 	'portfolioService'
 ]);
