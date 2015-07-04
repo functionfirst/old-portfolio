@@ -1,7 +1,8 @@
-angular.module('homeCtrl', ['portfolioService'])
+angular.module('homeCtrl', ['portfolioService', 'cacheService'])
 
 .filter('technologyFilter', function(){
 	return function(input, term) {
+		if(term === 'all') return input;
 		var out = [];
 
 		angular.forEach(input, function(value, key){
@@ -15,9 +16,13 @@ angular.module('homeCtrl', ['portfolioService'])
 	}
 })
 
-.controller('HomeController', function(Portfolio){
+.controller('HomeController', function(Portfolio, CacheService){
 	var home = this;
 	home.loading = true;
+
+	home.filter = function(){
+		return CacheService.get('filter');
+	}
 
 	Portfolio.all().success(function(data){
 		home.loading = false;

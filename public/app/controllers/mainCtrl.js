@@ -1,27 +1,16 @@
-angular.module('mainCtrl', ['portfolioService'])
+angular.module('mainCtrl', ['portfolioService', 'cacheService'])
 
-.controller('MainController', function(Portfolio){
+.controller('MainController', function(Portfolio, CacheService){
 	var main = this;
 
 	// FILTERING
-	main.filter = 'all';
+	CacheService.put('filter', 'all');
+	main.filter = CacheService.get('filter');
 	main.filters = ['c#','.NET', 'node.js','css','javascript','socket.io','photoshop'];
 
 	main.setFilter = function(filter){
 		main.filter = filter;
-	}
 
-	// // Nav controls
-	// main.nav = {
-	// 	state : false,
-	// 	toggle : function() {
-	// 		main.nav.state = !main.nav.state;
-	// 	},
-	// 	hide : function() {
-	// 		main.nav.state = false;
-	// 	},
-	// 	show : function() {
-	// 		main.nav.state = true;
-	// 	}
-	// }
+		CacheService.put('filter', filter);
+	}
 });
