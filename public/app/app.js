@@ -1,7 +1,7 @@
 var app = angular.module('portfolioApp', [
 	'appRoutes',
 	'mainCtrl',
-	'homeCtrl',
+	'portfolioCtrl',
 	'aboutCtrl',
 	'cvCtrl',
 	'portfolioService',

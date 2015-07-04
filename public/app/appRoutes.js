@@ -4,9 +4,9 @@ angular.module('appRoutes', ['ngRoute'])
 	$routeProvider
 		//homepage
 		.when('/', {
-			templateUrl : '/public/app/views/pages/home.html',
-			controller : 'HomeController',
-			controllerAs : 'home'
+			templateUrl : '/public/app/views/pages/portfolio/index.html',
+			controller : 'PortfolioController',
+			controllerAs : 'portfolio'
 		})
 		// filter
 		.when('/about', {

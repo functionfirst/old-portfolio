@@ -1,4 +1,4 @@
-angular.module('homeCtrl', ['portfolioService', 'cacheService'])
+angular.module('portfolioCtrl', ['portfolioService', 'cacheService'])
 
 .filter('technologyFilter', function(){
 	return function(input, term) {
@@ -16,17 +16,17 @@ angular.module('homeCtrl', ['portfolioService', 'cacheService'])
 	}
 })
 
-.controller('HomeController', function(Portfolio, CacheService){
-	var home = this;
-	home.loading = true;
+.controller('PortfolioController', function(Portfolio, CacheService){
+	var portfolio = this;
+	portfolio.loading = true;
 
-	home.filter = function(){
+	portfolio.filter = function(){
 		return CacheService.get('filter');
 	}
 
 	Portfolio.all().success(function(data){
-		home.loading = false;
+		portfolio.loading = false;
 
-		home.clients = data;
+		portfolio.clients = data;
 	});
 });

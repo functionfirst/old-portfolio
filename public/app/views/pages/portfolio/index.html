@@ -1,11 +1,11 @@
-<div class="loading" ng-show="home.loading">
+<div class="loading" ng-show="portfolio.loading">
 	<div class="loader">
 		<img src="/public/assets/images/oval.svg" />
 	</div>
 </div>
 	
 <section class="portfolio">
-	<article class="tile" ng-repeat="client in home.clients | technologyFilter : home.filter()">
+	<article class="tile" ng-repeat="client in portfolio.clients | technologyFilter : portfolio.filter()">
 		<a href="{{client.url}}">
 			<header>
 				<h1>{{client.name}}</h1>
