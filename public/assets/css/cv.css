@@ -1,0 +1,21 @@
+.cv .tile h2,
+.cv .tile h3,
+.cv .tile h4 {
+	line-height: 2em;
+}
+
+.cv .tile h2 {
+	color: #333;
+}
+
+.cv .tile h3 {
+	color: #DC4321
+}
+.cv .tile h4 {
+	color: #888;
+	font-size: 12px;
+}
+
+.cv .tile p {
+	margin-top: 10px;
+}
