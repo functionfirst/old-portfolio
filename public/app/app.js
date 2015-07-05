@@ -5,6 +5,5 @@ var app = angular.module('portfolioApp', [
 	'portfolioCtrl',
 	'aboutCtrl',
 	'cvCtrl',
-	'portfolioService',
-	'cacheService'
+	'portfolioService'
 ]);

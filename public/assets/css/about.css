@@ -1,0 +1,50 @@
+/* ABOUT */
+.tile {
+	/*float: left;*/
+	margin: 2%;
+	position: relative;
+	background: #fff;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	padding: 20px;
+}
+.tile h1 {
+	margin-bottom: 20px;
+}
+
+.tile li {
+	margin: 10px 0;
+}
+
+.tile dd {
+	margin-bottom: 10px;
+}
+
+
+.rate1:after,
+.rate2:after,
+.rate3:after {
+	content : "◼◻◻";
+	float: right;
+	color: #EE5E10;
+	font-size: 24px;
+}
+.rate2:after { content : "◼◼◻"; }
+.rate3:after { content : "◼◼◼"; }
+
+
+@media only screen and (min-width:480px) {
+	.tile dt {
+		float: left;
+	}
+
+	.tile dd {
+		margin-left: 120px;
+	}
+}
+
+@media only screen and (min-width:960px) {
+	.tile {
+		float: left;
+		width: 400px;
+	}
+}

@@ -1,4 +1,4 @@
-angular.module('portfolioCtrl', ['portfolioService', 'cacheService'])
+angular.module('portfolioCtrl', ['portfolioService'])
 
 .filter('technologyFilter', function(){
 	return function(input, term) {
@@ -16,12 +16,14 @@ angular.module('portfolioCtrl', ['portfolioService', 'cacheService'])
 	}
 })
 
-.controller('PortfolioController', function(Portfolio, CacheService){
+.controller('PortfolioController', function($scope, Portfolio){
 	var portfolio = this;
 	portfolio.loading = true;
 
+    $scope.pageClass = 'page-portfolio';
+
 	portfolio.filter = function(){
-		return CacheService.get('filter');
+		return $scope.filter;
 	}
 
 	Portfolio.all().success(function(data){

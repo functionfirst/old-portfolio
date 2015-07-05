@@ -31,33 +31,33 @@
 	<![endif]-->
 </head>
 <body ng-app="portfolioApp" ng-controller="MainController as main">
-	<header class="header">
-		<div class="header-container">
-			<h1 class="header-title">
-				functionfirst
-				<span class="header-subtitle">the web portfolio of alan jenkins</span>
-			</h1>
+	<div class="content pt-perspective">
+		<div class="pt-page" ng-class="pageClass" ng-view></div>
+		
+		<header class="header">
+			<div class="header-container">
+				<h1 class="header-title">
+					functionfirst
+					<span class="header-subtitle">the web portfolio of alan jenkins</span>
+				</h1>
 
-			<ul class="nav nav-secondary" ng-show="main.showFilters">
-				<h4>Select a filter..</h4>
-				<li ng-class="{ active:main.currentFilter('all') }">
-					<a href="" ng-click="main.setFilter('all')">All</a>
-				</li>
-				<li ng-class="{ active:main.currentFilter(filter) }" ng-repeat="filter in main.filters">
-					<a ng-click="main.setFilter(filter)" href="">{{filter}}</a>
-				</li>
-			</ul>
+				<ul class="nav nav-secondary" ng-show="main.showFilters">
+					<h4>Select a filter..</h4>
+					<li ng-class="{ active:main.filter.current('all') }">
+						<a href="" ng-click="main.filter.set('all')">All</a>
+					</li>
+					<li ng-class="{ active:main.filter.current(filter) }" ng-repeat="filter in main.filters">
+						<a ng-click="main.filter.set(filter)" href="">{{filter}}</a>
+					</li>
+				</ul>
 
-			<ul class="nav">
-				<li ng-class="{ active:main.currentPage(page.url)}" ng-repeat="page in main.pages">
-					<a href="/#{{page.url}}">{{page.name}}</a>
-				</li>
-			</ul>
-		</div>
-	</header>
-
-	<div class="content">
-		<div ng-view></div>
+				<ul class="nav">
+					<li ng-class="{ active:main.currentPage(page.url)}" ng-repeat="page in main.pages">
+						<a href="/#{{page.url}}">{{page.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</header>
 	</div>
 
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>

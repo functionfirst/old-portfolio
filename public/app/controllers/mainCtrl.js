@@ -1,6 +1,6 @@
-angular.module('mainCtrl', ['portfolioService', 'cacheService'])
+angular.module('mainCtrl', ['portfolioService'])
 
-.controller('MainController', function($scope, $location, Portfolio, CacheService){
+.controller('MainController', function($scope, $location, Portfolio){
 	var main = this;
 
 	// NAVIGATION
@@ -28,22 +28,31 @@ angular.module('mainCtrl', ['portfolioService', 'cacheService'])
 	// FILTERING
 
 	// Initialise default filter keyword
-	CacheService.put('filter', 'all');
-
-	// Set current filter in scope
-	main.filter = CacheService.get('filter');
+	$scope.filter = 'all';
 
 	// available filters
 	// this should probably be generated using the data in portfolio.json
 	main.filters = ['axure', 'css', 'c#', 'html', 'javascript', 'node.js', '.net', 'photoshop', 'socket.io']
 
-	main.setFilter = function(filter){
-		main.filter = filter;
+	main.filter = {};
 
-		CacheService.put('filter', filter);
-	};
+	main.filter.get = function() {
+		return $scope.filter;
+	}
 
-	main.currentFilter = function(filter){
-		return main.filter === filter;
-	};
+	main.filter.set = function(filter) {
+		$scope.filter = filter;
+	}
+
+	main.filter.current = function(filter) {
+		return $scope.filter === filter;
+	}
+
+	// main.setFilter = function(filter){
+	// 	$scope.filter = filter;
+	// };
+
+	// main.isCurrentFilter = function(filter){
+	// 	return $scope.filter === filter;
+	// };
 });

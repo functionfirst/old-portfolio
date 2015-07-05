@@ -1,12 +1,23 @@
 .header {
-	position: fixed;
+	/*position: fixed;*/
 	padding: 20px;
-	top: 0;
+	/*top: 0;
 	left: 0;
 	right: 0;
-	z-index: 10;
-	background-color: #ee5e10;
+	z-index: 10;*/
 	line-height: 32px;
+}
+
+.page-portfolio + .header {
+	background-color: #60D7A9;
+}
+
+.page-about + .header {
+	background-color: #0AC2D2;
+}
+
+.page-cv + .header {
+	background-color: #FD6A62;
 }
 
 .header-title {
@@ -17,4 +28,14 @@
 
 .header-subtitle {
 	opacity: 0.6;
+}
+
+@media only screen and (min-width:960px) {
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+	}
 }

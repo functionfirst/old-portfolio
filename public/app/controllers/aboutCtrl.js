@@ -1,5 +1,6 @@
 angular.module('aboutCtrl', [])
 
-.controller('AboutController', function(){
+.controller('AboutController', function($scope){
+    $scope.pageClass = 'page-about';
 	var about = this;
 });
