@@ -34,10 +34,15 @@
 }
 
 /* filter nav controls */
-.nav-control {
-	float: right;
-	color: #fff;
+.nav-collapse {
 	position: relative;
+	z-index: 1000;
+}
+.nav-control {
+	right: 20px;
+	top: 52px;
+	color: #fff;
+	position: absolute;
 	padding: 0 8px;
 	font-size: 0.8em;
 	text-transform: uppercase;
@@ -71,8 +76,9 @@
 	background-color: #fff;
 	padding: 10px;
 	line-height: 24px;
+	z-index: 999;
 	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
-	transition: right .3s ease-in-out;
+	transition: right .2s ease-in-out;
 }
 
 .nav-collapse.active .nav-control {

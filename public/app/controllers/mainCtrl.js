@@ -11,6 +11,10 @@ angular.module('mainCtrl', ['portfolioService'])
 		main.showNav = !main.showNav;
 	};
 
+	main.hideNav = function(){
+		main.showNav = false;
+	}
+
     // show filters if on the root, portfolio path
 	$scope.$on('$routeChangeSuccess', function(){
 		main.showFilters = $location.path() === '/';
