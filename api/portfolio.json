@@ -12,7 +12,7 @@
 	"url" :"http://getbuildmate.com",
 	"description" :"Website design and build for Buildmate Software Ltd. Included custom development of a Blog and Knowledge Base application.",
 	"role" :"Designer/Developer",
-	"technology" :"ASP.NET C# MVC, SQL Server, Photoshop, HTML5 &amp; CSS3",
+	"technology" :"ASP.NET C# MVC, SQL Server, Photoshop, HTML5 & CSS3",
 	"keywords" : [".net", "css", "c#", "sql", "photoshop", "html"]
 },{
 	"name" :"Buildmate - Application",
@@ -20,7 +20,7 @@
 	"url" :"https://buildmateapp.com",
 	"description" :"A web-based application that enables building companies and tradesmen to create estimates and tender documents.",
 	"role" :"Designer/Developer",
-	"technology" :"ASP.NET VB Web Forms, Telerik .NET AJAX Controls, SQL Server, Photoshop, HTML5 &amp; CSS3",
+	"technology" :"ASP.NET VB Web Forms, Telerik .NET AJAX Controls, SQL Server, Photoshop, HTML5 & CSS3",
 	"keywords" : [".net", "sql", "html", "css"]
 },{
 	"name" :"Buildmate - Mobile",

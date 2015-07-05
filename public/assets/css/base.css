@@ -10,7 +10,28 @@ body {
 	font: 14px/1.6em "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
-a {	
-	text-decoration:none;
+a {
+	text-decoration: none;
 	outline: 0;
+	color: #dc4321;
+	-webkit-transition: color .2s linear;
+	-moz-transition: 	color .2s linear;
+	-ms-transition: 	color .2s linear;
+	-o-transition: 		color .2s linear;
+	transition: 		color .2s linear
+}
+
+a:hover {
+	color: #b24934
+}
+
+img {
+	max-width: 100%
+}
+
+p {
+	margin: 18px 0
+}
+dt {
+	font-weight: 900
 }

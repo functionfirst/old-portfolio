@@ -22,5 +22,5 @@ angular.module('appRoutes', ['ngRoute'])
 		});
 
 		// get rid of the hash in url
-		$locationProvider.html5Mode(true);
+		// $locationProvider.html5Mode(true);
 });
