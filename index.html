@@ -38,7 +38,7 @@
 				<span class="header-subtitle">the web portfolio of alan jenkins</span>
 			</h1>
 
-			<ul class="nav nav-secondary" ng-show="main.showFilter()">
+			<ul class="nav nav-secondary" ng-show="main.showFilters">
 				<h4>Select a filter..</h4>
 				<li ng-class="{active:main.filter === 'all'}">
 					<a href="/" ng-click="main.setFilter('all')">All</a>
@@ -49,14 +49,14 @@
 			</ul>
 
 			<ul class="nav">
-				<li ng-class="{active:main.currentPage('portfolio')}">
-					<a href="/#/" ng-click="main.currentNav('portfolio')">Portfolio</a>
+				<li ng-class="{active:main.currentPage === '/' }">
+					<a href="/#/">Portfolio</a>
 				</li>
-				<li ng-class="{active:main.currentPage('about')}">
-					<a href="/#/about" ng-click="main.currentNav('about')">About</a>
+				<li ng-class="{active:main.currentPage === '/about' }">
+					<a href="/#/about">About</a>
 				</li>
-				<li ng-class="{active:main.currentPage('cv')}">
-					<a href="/#/cv" ng-click="main.currentNav('cv')">CV</a>
+				<li ng-class="{active:main.currentPage === '/cv' }">
+					<a href="/#/cv">CV</a>
 				</li>
 			</ul>
 		</div>

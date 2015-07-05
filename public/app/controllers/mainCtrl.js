@@ -1,14 +1,19 @@
 angular.module('mainCtrl', ['portfolioService', 'cacheService'])
 
-.controller('MainController', function(Portfolio, CacheService){
+.controller('MainController', function($scope, $location, Portfolio, CacheService){
 	var main = this;
-	main.page = 'portfolio';
+
+	// NAVIGATION
+	$scope.$on('$routeChangeSuccess', function(){
+        // show filters if on the root, portfolio path
+		main.showFilters = $location.path() === '/';
+
+		// highlight current page
+		main.currentPage = $location.path();
+	});
+
 
 	// FILTERING
-	main.showFilter = function() {
-		return main.page === 'portfolio';
-	}
-
 	CacheService.put('filter', 'all');
 	main.filter = CacheService.get('filter');
 	main.filters = ['axure', 'css', 'c#', 'html', 'javascript', 'node.js', '.net', 'photoshop', 'socket.io']
@@ -17,13 +22,5 @@ angular.module('mainCtrl', ['portfolioService', 'cacheService'])
 		main.filter = filter;
 
 		CacheService.put('filter', filter);
-	}
-
-	main.currentNav = function(page) {
-		main.page = page;
-	}
-
-	main.currentPage = function(page) {
-		return main.page === page;
 	}
 });
