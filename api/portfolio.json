@@ -1,7 +1,7 @@
 [{
 	"name" :"Gulf Plates",
 	"image" :"gulfplate.jpg",
-	"url" :"/gulfplates",
+	"url" :"/#/gulfplates",
 	"description" :"Live auction application that uses socket.io to instantly update connected client machines when someone submits a bid.",
 	"role" :"Designer/Developer",
 	"technology" :"MEAN stack leveraging socket.io for live updates",
@@ -25,7 +25,7 @@
 },{
 	"name" :"Buildmate - Mobile",
 	"image" :"build_mobile.jpg",
-	"url" :"/buildmate-mobile",
+	"url" :"/#/buildmate-mobile",
 	"description" :"Initial stage dashboard mock-up for the Buildmate iPhone application, built using Photoshop.",
 	"role" :"Designer",
 	"technology" :"Photoshop",
@@ -41,7 +41,7 @@
 },{
 	"name" :"Carioca Digital - Logo",
 	"image" :"cd_thumb.jpg",
-	"url" :"/carioca-digital",
+	"url" :"/#/carioca-digital",
 	"description" :"Logo design for a start-up technology company in Rio de Janeiro.",
 	"role" :"Designer",
 	"technology" :"Photoshop",

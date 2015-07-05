@@ -3,6 +3,7 @@
 	margin: 0 0 20px;
 }
 
+.content-block,
 .portfolio-link {
 	display: block;
 	position: relative;
@@ -40,6 +41,48 @@
 
 .portfolio-article dl {
 	font-size: 12px
+}
+
+.content-block {
+	position: relative;
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 600px;
+}
+
+.content-control {
+	top: 30px;
+	position: absolute;
+	background-color: #fff;
+	height: 40px;
+	width: 40px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+.content-control:hover {
+	opacity: 0.6;
+}
+
+.content-prev {
+	left: -60px;
+}
+
+.content-next {
+	right: -60px;
+}
+
+.content-control:before {
+	position: absolute;
+	content : "";
+	top: 10px;
+	left: 5px;
+	border: 10px solid transparent;
+	border-right-color: #EE5E10;
+}
+
+.content-next:before {
+	left: 15px;
+	border-right-color: transparent;
+	border-left-color: #EE5E10;
 }
 
 @media only screen and (min-width:480px) {
