@@ -4,23 +4,41 @@ angular.module('mainCtrl', ['portfolioService', 'cacheService'])
 	var main = this;
 
 	// NAVIGATION
-	$scope.$on('$routeChangeSuccess', function(){
-        // show filters if on the root, portfolio path
-		main.showFilters = $location.path() === '/';
+	main.pages = [{
+		name : 'Portfolio',
+		url : '/'
+	}];
 
-		// highlight current page
-		main.currentPage = $location.path();
+    // show filters if on the root, portfolio path
+	$scope.$on('$routeChangeSuccess', function(){
+		main.showFilters = $location.path() === '/';
 	});
 
+	// highlight current page
+	main.currentPage = function(page) {
+		return  $location.path() === page;	
+	}
 
 	// FILTERING
+
+	// Initialise default filter keyword
 	CacheService.put('filter', 'all');
+
+	// Set current filter in scope
 	main.filter = CacheService.get('filter');
+
+	// available filters
+	// this should probably be generated using the data in portfolio.json
 	main.filters = ['axure', 'css', 'c#', 'html', 'javascript', 'node.js', '.net', 'photoshop', 'socket.io']
 
 	main.setFilter = function(filter){
+		console.log(filter);
 		main.filter = filter;
 
 		CacheService.put('filter', filter);
-	}
+	};
+
+	main.currentFilter = function(filter){
+		return main.filter === filter;
+	};
 });

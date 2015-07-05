@@ -40,22 +40,26 @@
 
 			<ul class="nav nav-secondary" ng-show="main.showFilters">
 				<h4>Select a filter..</h4>
-				<li ng-class="{active:main.filter === 'all'}">
-					<a href="/" ng-click="main.setFilter('all')">All</a>
+				<li ng-class="{ active:main.currentFilter('all') }">
+					<a href="" ng-click="main.setFilter('all')">All</a>
 				</li>
-				<li ng-class="{active:main.filter == filter}" ng-repeat="filter in main.filters">
+				<li ng-class="{ active:main.currentFilter(filter) }" ng-repeat="filter in main.filters">
 					<a ng-click="main.setFilter(filter)" href="">{{filter}}</a>
 				</li>
 			</ul>
 
 			<ul class="nav">
-				<li ng-class="{active:main.currentPage === '/' }">
+				<!-- <li ng-class="{ active:main.currentPage(page.name)}" ng-repeat="page in pages">
+					<a href="#/{{page.url}}">{{page.name`}}</a>
+				</li> -->
+				
+				<li ng-class="{ active:main.currentPage('/') }">
 					<a href="/#/">Portfolio</a>
 				</li>
-				<li ng-class="{active:main.currentPage === '/about' }">
+				<li ng-class="{ active:main.currentPage('/about') }">
 					<a href="/#/about">About</a>
 				</li>
-				<li ng-class="{active:main.currentPage === '/cv' }">
+				<li ng-class="{ active:main.currentPage('/cv') }">
 					<a href="/#/cv">CV</a>
 				</li>
 			</ul>
