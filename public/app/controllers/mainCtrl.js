@@ -7,6 +7,12 @@ angular.module('mainCtrl', ['portfolioService', 'cacheService'])
 	main.pages = [{
 		name : 'Portfolio',
 		url : '/'
+	},{
+		name : 'About',
+		url : '/about'
+	},{
+		name : 'CV',
+		url : '/cv'
 	}];
 
     // show filters if on the root, portfolio path
@@ -32,7 +38,6 @@ angular.module('mainCtrl', ['portfolioService', 'cacheService'])
 	main.filters = ['axure', 'css', 'c#', 'html', 'javascript', 'node.js', '.net', 'photoshop', 'socket.io']
 
 	main.setFilter = function(filter){
-		console.log(filter);
 		main.filter = filter;
 
 		CacheService.put('filter', filter);
