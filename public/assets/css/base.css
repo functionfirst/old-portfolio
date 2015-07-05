@@ -1,4 +1,4 @@
-*{
+* {
 	-webkit-box-sizing: 	border-box;
 	-moz-box-sizing: 		border-box;
 	box-sizing: 			border-box
@@ -6,7 +6,7 @@
 
 body {
 	background: #ee5e10;
-	background-color: #333;
+	/*background-color: #60D7A9;*/
 	color: #666;
 	font: 14px/1.6em "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
@@ -38,14 +38,8 @@ dt {
 	font-weight: 900
 }
 
-.content {
-	/*padding: 20px;
-	float: left;
-	width: 100%;*/
-}
-
 .page-portfolio {
-	background: #60D7A9;
+	background: #ee5e10;
 }
 
 .page-about {
@@ -55,9 +49,3 @@ dt {
 .page-cv {
 	background: #FD6A62;
 }
-
-/*@media only screen and (min-width:960px) {
-	.content {
-		margin-top: 80px;
-	}
-}*/

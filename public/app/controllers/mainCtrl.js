@@ -4,16 +4,7 @@ angular.module('mainCtrl', ['portfolioService'])
 	var main = this;
 
 	// NAVIGATION
-	main.pages = [{
-		name : 'Portfolio',
-		url : '/'
-	},{
-		name : 'About',
-		url : '/about'
-	},{
-		name : 'CV',
-		url : '/cv'
-	}];
+	main.pages = pages;
 
     // show filters if on the root, portfolio path
 	$scope.$on('$routeChangeSuccess', function(){
@@ -26,7 +17,6 @@ angular.module('mainCtrl', ['portfolioService'])
 	}
 
 	// FILTERING
-
 	// Initialise default filter keyword
 	$scope.filter = 'all';
 
@@ -34,25 +24,26 @@ angular.module('mainCtrl', ['portfolioService'])
 	// this should probably be generated using the data in portfolio.json
 	main.filters = ['axure', 'css', 'c#', 'html', 'javascript', 'node.js', '.net', 'photoshop', 'socket.io']
 
-	main.filter = {};
-
-	main.filter.get = function() {
-		return $scope.filter;
-	}
-
-	main.filter.set = function(filter) {
-		$scope.filter = filter;
-	}
-
-	main.filter.current = function(filter) {
-		return $scope.filter === filter;
-	}
-
-	// main.setFilter = function(filter){
-	// 	$scope.filter = filter;
-	// };
-
-	// main.isCurrentFilter = function(filter){
-	// 	return $scope.filter === filter;
-	// };
+	main.filter = {
+		get : function() {
+			return $scope.filter;
+		},
+		set : function(filter) {
+			$scope.filter = filter;
+		},
+		current : function(filter) {
+			return $scope.filter === filter;
+		}
+	};
 });
+
+var pages = [{
+	name : 'Portfolio',
+	url : '/'
+},{
+	name : 'About',
+	url : '/about'
+},{
+	name : 'CV',
+	url : '/cv'
+}];
