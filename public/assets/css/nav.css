@@ -33,23 +33,75 @@
 	background-color: #333;
 }
 
-.nav-secondary {
+/* filter nav controls */
+.nav-control {
 	float: right;
-}
-
-.nav h4 {
-	font-size: 12px;
-	line-height: 1.6em;
 	color: #fff;
-	/*background-color: #000;*/
-	position: absolute;
-	/*padding: 4px 12px;*/
-	/*border-radius: 4px;*/
-	opacity: 0;
-	transition: opacity .3s ease-in-out, margin .3s ease-in-out;
+	position: relative;
+	padding: 0 8px;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	border-radius: 3px;
 }
 
-.nav:hover h4 {
-	margin-top: 30px;
-	opacity: 0.6;
+.nav-control:hover,
+.nav-control:active {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #fff;
+}
+
+.nav-control img {
+	width: 12px;
+	fill: red;
+	position: relative;
+	top: 2px;
+	right: 3px;
+}
+
+.nav-control strong {
+	font-weight: 600;
+}
+
+.nav-filters {
+	right: -160px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 160px;
+	background-color: #fff;
+	padding: 10px;
+	line-height: 24px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	transition: right .3s ease-in-out;
+}
+
+.nav-collapse.active .nav-control {
+	color: #333;
+}
+
+.nav-collapse.active .nav-filters {
+	right: 0;
+}
+
+.nav-filters li + li {
+	margin-top: 3px;
+}
+
+.nav-filters {
+	overflow: auto;
+}
+
+.nav-filters a {
+	border-radius: 3px;
+	display: block;
+	padding: 4px 12px;
+}
+
+.nav-filters a:hover {
+	background-color: #eee;
+}
+
+.nav-filters .active a {
+	background-color: #333;
+	color: #fff;
 }

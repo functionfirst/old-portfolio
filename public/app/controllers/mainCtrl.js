@@ -6,6 +6,11 @@ angular.module('mainCtrl', ['portfolioService'])
 	// NAVIGATION
 	main.pages = pages;
 
+	// toggle filter menu
+	main.toggleNav = function(){
+		main.showNav = !main.showNav;
+	};
+
     // show filters if on the root, portfolio path
 	$scope.$on('$routeChangeSuccess', function(){
 		main.showFilters = $location.path() === '/';
@@ -30,6 +35,7 @@ angular.module('mainCtrl', ['portfolioService'])
 		},
 		set : function(filter) {
 			$scope.filter = filter;
+			main.toggleNav();
 		},
 		current : function(filter) {
 			return $scope.filter === filter;

@@ -38,16 +38,19 @@
 					functionfirst
 					<span class="header-subtitle">the web portfolio of alan jenkins</span>
 				</h1>
+				
+				<div class="nav-collapse" ng-class="{ active : main.showNav }" ng-show="main.showFilters">
+					<a href="" ng-click="main.toggleNav()" class="nav-control"><img src="/public/assets/images/filter.svg">Filter: <strong>{{main.filter.get()}}</strong></a>
 
-				<ul class="nav nav-secondary" ng-show="main.showFilters">
-					<h4>Select a filter..</h4>
-					<li ng-class="{ active:main.filter.current('all') }">
-						<a href="" ng-click="main.filter.set('all')">All</a>
-					</li>
-					<li ng-class="{ active:main.filter.current(filter) }" ng-repeat="filter in main.filters">
-						<a ng-click="main.filter.set(filter)" href="">{{filter}}</a>
-					</li>
-				</ul>
+					<ul class="nav-filters">
+						<li ng-class="{ active:main.filter.current('all') }">
+							<a href="" ng-click="main.filter.set('all')">All</a>
+						</li>
+						<li ng-class="{ active:main.filter.current(filter) }" ng-repeat="filter in main.filters">
+							<a ng-click="main.filter.set(filter)" href="">{{filter}}</a>
+						</li>
+					</ul>
+				</div>
 
 				<ul class="nav">
 					<li ng-class="{ active:main.currentPage(page.url)}" ng-repeat="page in main.pages">
