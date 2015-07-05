@@ -32,8 +32,6 @@
 </head>
 <body ng-app="portfolioApp" ng-controller="MainController as main">
 	<div class="content pt-perspective">
-		<div class="pt-page" ng-class="pageClass" ng-view></div>
-		
 		<header class="header">
 			<div class="header-container">
 				<h1 class="header-title">
@@ -58,6 +56,10 @@
 				</ul>
 			</div>
 		</header>
+		
+		<div class="pt-page" ng-class="pageClass" ng-view></div>
+
+		<div class="overlay"></div>
 	</div>
 
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -73,7 +75,6 @@
 
 	<!-- services -->
 	<script src="/public/app/services/portfolioService.js"></script>
-	<script src="/public/app/services/cacheService.js"></script>
 	
 	<!-- app -->
 	<script src="/public/app/appRoutes.js"></script>
