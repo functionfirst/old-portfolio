@@ -32,7 +32,33 @@
 	color: #000;
 }
 
+.btn-list {
+	text-align: right;
+}
+
+.btn {
+	position: relative;
+	display: inline-block;
+	background-color: #fff;
+	padding: 15px 20px 15px 40px;
+}
+.btn:hover {
+	opacity: 0.6;
+}
+
+.btn img {
+	width: 20px;
+	position: absolute;
+	margin-top: 2px;
+	margin-left: -25px;
+}
+
 @media only screen and (min-width:780px) {
+	.btn-list {
+		width: 600px;
+		margin: 0 auto 20px;
+	}
+
 	.cv .tile {
 		width: 600px;
 		margin-right: auto;
