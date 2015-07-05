@@ -1,7 +1,10 @@
 /* ABOUT */
+.page-about a {
+	color: #0AC2D2;
+}
+
 .tile {
-	/*float: left;*/
-	margin: 2%;
+	margin: 1%;
 	position: relative;
 	background: #fff;
 	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
@@ -19,13 +22,21 @@
 	margin-bottom: 10px;
 }
 
+.experience li:before {
+	content : "•";
+	width: 20px;
+	text-align: center;
+	display: inline-block;
+	color: #0AC2D2;
+}
+
 
 .rate1:after,
 .rate2:after,
 .rate3:after {
 	content : "◼◻◻";
 	float: right;
-	color: #EE5E10;
+	color: #0AC2D2;
 	font-size: 24px;
 }
 .rate2:after { content : "◼◼◻"; }
@@ -45,6 +56,6 @@
 @media only screen and (min-width:960px) {
 	.tile {
 		float: left;
-		width: 400px;
+		width: 30%;
 	}
 }
