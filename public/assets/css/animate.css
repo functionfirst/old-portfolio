@@ -57,13 +57,13 @@
 	100% { -webkit-transform: translateZ(0) translateX(0); transform: translateZ(0) translateX(0); }
 }
 
-.ng-enter {
+.pt-page.ng-enter {
 	visibility: visible;
 	-webkit-animation: rotateSlideIn 1s both ease;
     z-index: 800;
 }
 
-.ng-leave {
+.pt-page.ng-leave {
 	visibility: visible;
 	-webkit-animation: rotateSlideOut 1s both ease;
     z-index: 900;
