@@ -26,6 +26,10 @@
 	transition: height .3s ease-in-out;
 }
 
+.portfolio-article img {
+	width: 100%;
+}
+
 .portfolio-header {
 	font-size: 12px;
 	text-transform: uppercase;
