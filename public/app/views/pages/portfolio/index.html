@@ -5,7 +5,7 @@
 </div>
 	
 <section class="portfolio container">
-	<article class="portfolio-article" ng-repeat="client in portfolio.clients | technologyFilter : portfolio.filter()">
+	<article class="portfolio-article" ng-repeat="client in portfolio.clients">
 		<a href="{{client.url}}" class="portfolio-link">
 			<section class="portfolio-details">
 				<h1 class="portfolio-header">{{client.name}}</h1>
