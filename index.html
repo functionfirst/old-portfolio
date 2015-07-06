@@ -32,19 +32,6 @@
 </head>
 <body ng-app="portfolioApp" ng-controller="MainController as main" ng-class="{ 'filter-open' : main.showNav }">
 	<div class="content pt-perspective">
-		<div class="nav-collapse" ng-class="{ active : main.showNav }" ng-show="main.showFilters">
-			<a href="" ng-click="main.toggleNav()" class="nav-control"><img src="/public/assets/images/filter.svg">Filter: <strong>{{main.filter.get()}}</strong></a>
-
-			<ul class="nav-filters">
-				<li ng-class="{ active:main.filter.current('all') }">
-					<a href="" ng-click="main.filter.set('all')">All</a>
-				</li>
-				<li ng-class="{ active:main.filter.current(filter) }" ng-repeat="filter in main.filters">
-					<a ng-click="main.filter.set(filter)" href="">{{filter}}</a>
-				</li>
-			</ul>
-		</div>
-
 		<header class="header">
 			<div class="header-container">
 				<h1 class="header-title">
