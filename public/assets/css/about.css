@@ -30,18 +30,17 @@
 	color: #0AC2D2;
 }
 
-
-.rate1:after,
-.rate2:after,
-.rate3:after {
-	content : "◼◻◻";
+.rate:after {
+	font-family: Arial, Helvetica, sans-serif;
+	content : "◼◻◻◻◻";
 	float: right;
 	color: #0AC2D2;
 	font-size: 24px;
 }
-.rate2:after { content : "◼◼◻"; }
-.rate3:after { content : "◼◼◼"; }
-
+.rate2:after { content : "◼◼◻◻◻"; }
+.rate3:after { content : "◼◼◼◻◻"; }
+.rate4:after { content : "◼◼◼◼◻"; }
+.rate5:after { content : "◼◼◼◼◼"; }
 
 @media only screen and (min-width:480px) {
 	.tile dt {
