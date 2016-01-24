@@ -9,21 +9,6 @@
 	line-height: 2em;
 }
 
-/*.cv li {
-	position: relative;
-	margin-left: 30px;
-}
-
-.cv li:before {
-	margin-left: -20px;
-	position: absolute;
-	content : "•";
-	width: 20px;
-	text-align: center;
-	display: inline-block;
-	color: #FD6A62;
-}*/
-
 .cv .tile h2 {
 	font-weight: 600;
 	color: #333;
