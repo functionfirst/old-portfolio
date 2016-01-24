@@ -9,23 +9,28 @@
 	line-height: 2em;
 }
 
-.cv ul li {
+/*.cv li {
+	position: relative;
 	margin-left: 30px;
 }
-.cv ul li:before {
-	font-family: Arial, Helvetica, sans-serif;
-	content: "◼ ";
-	color: #FD6A62;
-	position: absolute;
+
+.cv li:before {
 	margin-left: -20px;
-}
+	position: absolute;
+	content : "•";
+	width: 20px;
+	text-align: center;
+	display: inline-block;
+	color: #FD6A62;
+}*/
 
 .cv .tile h2 {
+	font-weight: 600;
 	color: #333;
 }
 
 .cv .tile h3 {
-	color: #FD6A62;
+	color: #555;
 }
 
 .cv .tile h4 {

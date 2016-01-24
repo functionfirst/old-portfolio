@@ -1,7 +1,7 @@
 /* ABOUT */
-.page-about a {
+/*.page-about a {
 	color: #0AC2D2;
-}
+}*/
 
 .tile {
 	margin: 1%;
@@ -14,33 +14,41 @@
 	margin-bottom: 20px;
 }
 
-.tile li {
-	margin: 10px 0;
+.tile * + h1 {
+	margin-top: 20px;
 }
 
 .tile dd {
 	margin-bottom: 10px;
 }
 
-.experience li:before {
-	content : "•";
-	width: 20px;
-	text-align: center;
-	display: inline-block;
-	color: #0AC2D2;
+.skills li {
+	margin: 0;
+	/*text-indent: 10px;*/
+	padding: 4px 8px;
+}
+
+.skills li:before {
+	content: "";
+}
+
+.skills li + li {
+	margin: 0;
+	border-top: 1px solid #eee;
 }
 
 .rate:after {
 	font-family: Arial, Helvetica, sans-serif;
 	content : "◼◻◻◻◻";
 	float: right;
-	color: #0AC2D2;
-	font-size: 24px;
+	color: #4f81bd;
+	font-size: 32px;
 }
-.rate2:after { content : "◼◼◻◻◻"; }
-.rate3:after { content : "◼◼◼◻◻"; }
-.rate4:after { content : "◼◼◼◼◻"; }
-.rate5:after { content : "◼◼◼◼◼"; }
+
+.rate2:after { content : "••"; }
+.rate3:after { content : "•••"; }
+.rate4:after { content : "••••"; }
+.rate5:after { content : "•••••"; }
 
 @media only screen and (min-width:480px) {
 	.tile dt {
