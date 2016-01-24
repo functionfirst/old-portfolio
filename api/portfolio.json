@@ -1,7 +1,7 @@
 [{
 	"name" :"Gulf Plates",
 	"image" :"gulfplate.jpg",
-	"url" :"/#/gulfplates",
+	"url" :"http://gulfplates.com",
 	"description" :"Live auction application that uses socket.io to instantly update connected client machines when someone submits a bid.",
 	"role" :"Designer/Developer",
 	"technology" :"MEAN stack leveraging socket.io for live updates",
