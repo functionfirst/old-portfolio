@@ -34,15 +34,29 @@
 }
 
 .btn-list {
-	text-align: right;
+	margin: 0 10px;
+	height: 52px;
+}
+
+.btn-list li {
+	width: 33.33333333%;
+	display: block;
+	float: left;
+}
+
+.btn-list li:last-child .btn {
+	margin: 0;
 }
 
 .btn {
+	text-align: center;
 	position: relative;
-	display: inline-block;
+	display: block;
 	background-color: #fff;
 	padding: 15px 20px 15px 40px;
+	margin-right: 1px;
 }
+
 .btn:hover {
 	opacity: 0.6;
 }
@@ -57,7 +71,7 @@
 @media only screen and (min-width:780px) {
 	.btn-list {
 		width: 600px;
-		margin: 0 auto 20px;
+		margin: 0 auto;
 	}
 
 	.cv .tile {
