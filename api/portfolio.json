@@ -1,0 +1,57 @@
+[{
+	"name" :"Property Portal",
+	"image" :"property_portal.jpg",
+	"url" :"/property-portal",
+	"description" :"Application development for a property portal based in Qatar.",
+	"role" :"Designer/Developer",
+	"technology" :"MEAN stack leveraging socket.io for live updates",
+	"keywords" : ["node.js", "nosql", "angular.js", "css", "html", "socket.io", "javascript"]
+},{
+	"name" :"Live Auctions",
+	"image" :"live_auctions.jpg",
+	"url" :"/live-auctions",
+	"description" :"Live auction application that uses socket.io to instantly update connected client machines when someone submits a bid.",
+	"role" :"Designer/Developer",
+	"technology" :"MEAN stack leveraging socket.io for live updates",
+	"keywords" : ["node.js", "nosql", "angular.js", "css", "html", "socket.io", "javascript"]
+},{
+	"name" :"Buildmate - Application",
+	"image" :"buildmate.jpg",
+	"url" :"/buildmateapp",
+	"description" :"A web-based application that enables building companies and tradesmen to create estimates and tender documents.",
+	"role" :"Designer/Developer",
+	"technology" :"ASP.NET VB Web Forms, Telerik .NET AJAX Controls, SQL Server, Photoshop, HTML5 & CSS3",
+	"keywords" : [".net", "sql", "html", "css"]
+},{
+	"name" :"Claromentis",
+	"image" :"pages_proto.jpg",
+	"url" :"/claromentis",
+	"description" :"Initial stage dashboard mock-up for the Buildmate iPhone application, built using Photoshop.",
+	"role" :"Designer/UI",
+	"technology" :"Axure",
+	"keywords" : ["axure"]
+},{
+	"name" :"Buildmate - Website",
+	"image" :"buildmate_web.jpg",
+	"url" :"/getbuildmate",
+	"description" :"Website design and build for Buildmate Software Ltd. Included custom development of a Blog and Knowledge Base application.",
+	"role" :"Designer/Developer",
+	"technology" :"ASP.NET C# MVC, SQL Server, Photoshop, HTML5 & CSS3",
+	"keywords" : [".net", "css", "c#", "sql", "photoshop", "html"]
+},{
+	"name" :"Buildmate - Mobile",
+	"image" :"build_mobile.jpg",
+	"url" :"/buildmate-mobile",
+	"description" :"Initial stage dashboard mock-up for the Buildmate iPhone application, built using Photoshop.",
+	"role" :"Designer",
+	"technology" :"Photoshop",
+	"keywords" : ["photoshop"]
+},{
+	"name" :"Carioca Digital - Logo",
+	"image" :"cd_thumb.jpg",
+	"url" :"/carioca-digital",
+	"description" :"Logo design for a start-up technology company in Rio de Janeiro.",
+	"role" :"Designer",
+	"technology" :"Photoshop",
+	"keywords" : ["photoshop"]
+}]

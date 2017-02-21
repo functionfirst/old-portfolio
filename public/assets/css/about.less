@@ -1,0 +1,36 @@
+.about {
+
+	li {
+		padding: 4px 8px;
+		position: relative;
+		border-top: 1px solid rgba(255,255,255,0.1);
+
+		&:nth-child(odd) {
+			background-color:rgba(0,0,0,0.1);
+		}
+
+		&:before {
+			content: "";
+		}
+	}
+
+}
+
+.rate {
+
+	&:after {
+		font-family: Arial,Helvetica,sans-serif;
+		content: "•";
+		color: #4f81bd;
+		position: absolute;
+		font-size: 32px;
+		right: 0;
+		top: -10px;
+	}
+
+}
+
+.rate2:after { content : "••"; }
+.rate3:after { content : "•••"; }
+.rate4:after { content : "••••"; }
+.rate5:after { content : "•••••"; }

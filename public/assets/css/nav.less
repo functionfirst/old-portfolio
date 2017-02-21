@@ -1,0 +1,118 @@
+.nav {
+	// margin-top: 2rem;
+
+	li {
+		margin-top: .5rem;
+
+		a {
+			color: #fff;
+			display: block;
+			background-color: transparent;
+			padding: 3px 8px;
+			border-radius: 3px;
+			-webkit-transition: background .3s linear;
+			-o-transition: 		background .3s linear;
+			transition: 		background .3s linear;
+
+			&:hover {
+				background-color: rgba(0,0,0,0.2);
+			}
+		}
+	}
+
+	.active {
+		 a {
+			 color: #fff;
+			background-color: rgba(0,0,0,0.4);
+		}
+	}
+
+}
+
+.nav-social {
+	margin-top: 2rem;
+
+	li {
+		display: inline-block;
+		margin: 6px;
+	}
+}
+
+/* filter nav controls */
+.nav-collapse {
+	position: relative;
+	z-index: 1000;
+}
+.nav-control {
+	right: 20px;
+	top: 52px;
+	color: #fff;
+	position: absolute;
+	padding: 0 8px;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+
+.nav-control:hover,
+.nav-control:active {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #fff;
+}
+
+.nav-control img {
+	width: 12px;
+	fill: red;
+	position: relative;
+	top: 2px;
+	right: 3px;
+}
+
+.nav-control strong {
+	font-weight: 600;
+}
+
+.nav-filters {
+	right: -200px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 200px;
+	background-color: #fff;
+	padding: 10px;
+	line-height: 24px;
+	z-index: 999;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	transition: right .2s ease-in-out;
+}
+
+.nav-collapse.active .nav-control {
+	color: #333;
+}
+
+.nav-collapse.active .nav-filters {
+	right: 0;
+}
+
+.nav-filters li + li {
+	margin-top: 3px;
+}
+
+.nav-filters {
+	overflow: auto;
+}
+
+.nav-filters a {
+	border-radius: 3px;
+	display: block;
+	padding: 4px 12px;
+}
+
+.nav-filters a:hover {
+	background-color: #eee;
+}
+
+.nav-filters .active a {
+	background-color: #333;
+	color: #fff;
+}

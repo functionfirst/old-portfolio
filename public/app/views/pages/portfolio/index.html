@@ -1,0 +1,27 @@
+
+
+
+	
+<section class="portfolio container row small-up-3 medium-up-3">
+	<article class="portfolio-article columns" ng-repeat="client in portfolio.clients">
+		<a href="#{{client.url}}" class="portfolio-link">
+			<section class="portfolio-details">
+				<div class="portfolio-content">
+					<h1 class="portfolio-header">{{client.name}}</h1>
+
+					<section class="portfolio-description">
+							<p>{{client.description}}</p>
+<!--
+							<dl>
+								<dt>Role</dt>
+									<dd>{{client.role}}</dd>
+								<dt>Technology</dt>
+									<dd>{{client.technology}}</dd>
+							</dl>-->
+					</section>
+				</div>
+			</section>
+			<img ng-src="/public/assets/images/{{client.image}}" alt="Image showing an example from {{client.name}}">
+		</a>
+	</article>
+</section>
