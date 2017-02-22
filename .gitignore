@@ -1,0 +1,6 @@
+/bower_components
+/node_modules
+/public/assets/lib
+/public/uploads
+.DS_Store
+.vscode/

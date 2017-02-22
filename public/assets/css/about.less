@@ -1,17 +1,13 @@
-.about {
+.striped-list {
 
 	li {
-		padding: 4px 8px;
+		padding: 8px 12px;
 		position: relative;
-		border-top: 1px solid rgba(255,255,255,0.1);
 
-		&:nth-child(odd) {
-			background-color:rgba(0,0,0,0.1);
+		+ li {
+			border-top: 1px solid #eee;
 		}
 
-		&:before {
-			content: "";
-		}
 	}
 
 }
@@ -21,11 +17,12 @@
 	&:after {
 		font-family: Arial,Helvetica,sans-serif;
 		content: "•";
-		color: #4f81bd;
+		color: #777;
 		position: absolute;
 		font-size: 32px;
-		right: 0;
-		top: -10px;
+		right: 10px;
+		top: -6px;
+		opacity: 0.75;
 	}
 
 }

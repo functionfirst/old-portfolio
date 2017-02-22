@@ -1,0 +1,18 @@
+.transition(@duration:0.2s, @ease:ease-out) {
+  -webkit-transition:   all @duration @ease;
+  -moz-transition:      all @duration @ease;
+  -o-transition:        all @duration @ease;
+  transition:           all @duration @ease;
+}
+
+.transform(...) {
+  -webkit-transform:    @arguments;
+  -moz-transform:       @arguments;
+  -o-transform:         @arguments;
+  -ms-transform:        @arguments;
+  transform:            @arguments;
+}
+
+.translate(@x:0, @y:0) {
+  .transform(translate(@x, @y));
+}

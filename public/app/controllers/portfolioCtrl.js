@@ -1,14 +1,13 @@
-angular.module('portfolioCtrl', ['portfolioService'])
+(function() {
+	angular.module('portfolioCtrl', ['portfolioService'])
+		.controller('PortfolioController', portfolio);
 
-.controller('PortfolioController', function($scope, Portfolio){
-	var portfolio = this;
-	portfolio.loading = true;
 
-    $scope.pageClass = 'page-portfolio';
+	//////
 
-	Portfolio.all().success(function(data){
-		portfolio.loading = false;
 
-		portfolio.clients = data;
-	});
-});
+	function portfolio($rootScope, $scope, Portfolio){
+		var vm = this;
+		vm.clients = $rootScope.clients;
+	}
+})();

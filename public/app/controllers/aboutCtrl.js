@@ -1,6 +1,11 @@
-angular.module('aboutCtrl', [])
+(function(){
+    angular.module('aboutCtrl', [])
+        .controller('AboutController', about);
 
-.controller('AboutController', function($scope){
-    $scope.pageClass = 'page-about';
-	var about = this;
-});
+    //////
+
+    function about($scope){
+        $scope.pageClass = 'page-about';
+        var vm = this;
+    }
+})();

@@ -1,4 +1,4 @@
-(function(){
+(function() {
 	angular.module('portfolioService', [])
 		.factory('Portfolio', portfolio);
 
