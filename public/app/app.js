@@ -1,7 +1,6 @@
 (function(){
 
 	angular.module('portfolioApp', [
-		'ngAnimate',
 		'appRoutes',
 
 		// Controllers
@@ -9,9 +8,6 @@
 		'homeCtrl',
 		'aboutCtrl',
 		'pageCtrl',
-
-		// directives
-		'pageViewer',
 
 		// Services
 		'portfolioService'

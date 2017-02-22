@@ -30,7 +30,6 @@
 
 		function init() {
 			Portfolio.all().success(function(data){
-				vm.loading = false;
 
 				vm.clients = data;
 				$rootScope.clients = data;

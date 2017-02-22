@@ -1,21 +1,50 @@
 <h1>Property Portal</h1>
 
+<p>
+    
+    <a target="_blank" href="http://178.62.213.155:3000/">View demo system <span class="fa fa-external-link"></span></a>
+</p>
+
 <div class="row">
     <div class="small-9 columns">
         <p class="lead">
-            Application development for a property portal based in Qatar.
+            The brief for this project was to design and develop a fully functional property management portal to advertise
+            property for sale or available to rent. Initially the plan was for the portal to be launched in Qatar and from there
+            slowly build interest and expand into other territories as awareness and demand grew.
         </p>
 
-        <h3>Brief</h3>
+        <a class="float-right" target="_blank" href="http://178.62.213.155:3000/"><img src="/public/assets/images/iqbayt.jpg"></a>
 
-        <p>Lorem ipsum dolor sit amet</p>
+        <h3>Features</h3>
+
+        <ul>
+            <li>CRUD Property Management</li>
+            <li>User Registration</li>
+            <li>Authentication (Token based)</li>
+            <li>Password Reset (Also token based)</li>
+            <li>Integration with AWS S3 cloud storage - for storing a large quantity of property images</li>
+        </ul>
 
         <h3>Summary</h3>
 
-        <p>Lorem ipsum dolor sit amet</p>
+        <p>
+            The project itself was developed as two loosely coupled front and back-end applications.
+            The back-end application was built using NodeJS and ExpressJS as the main framework while
+            MongooseJS was used as an object map to a MongoDB document store. Using these libraries I
+            was able to create a Rest API that could be leveraged by the front-end system.
+        </p>
 
-        <p class="text-center">
-            <a class="button large" target="_blank" href="http://178.62.213.155:3000/">View Property Portal <span class="fa fa-external-link"></span></a>
+        <p>
+            Having taken an API first approach to this project, it meant I was able to consume my own API to
+            create the front-end as a single-page web application using AngularJS. This allowed me to develop both applications
+            in tandem while maintaining a separation of concerns between the two. The structure of the front-end code was
+            heavily influenced by John Papa's <a class="_blank" href="https://github.com/johnpapa/angular-styleguide">Angular Style Guide <span class="fa fa-external-link"></span></a>. 
+        </p>
+
+        <p>
+            <em>In this modern age I think any new web-application should be built with an API first mindset. This not only creates good separation of concerns
+                and allows you to consume your own API, but it also allows third-partyies to integrate with it as well. Whether they want to create a
+                native or desktop application or they need to upload and manage data from another data source, a good API will allow them to do this.</em>
         </p>
     </div>
     <div class="small-3 columns">
