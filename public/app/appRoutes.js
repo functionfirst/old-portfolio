@@ -3,17 +3,17 @@ angular.module('appRoutes', ['ngRoute'])
 .config(function($routeProvider, $locationProvider) {
 	$routeProvider
 		.when('/', {
-			templateUrl : '/public/app/views/pages/portfolio/index.html',
-			controller : 'PortfolioController',
-			controllerAs : 'portfolio'
+			templateUrl : '/public/app/views/index.html',
+			controller : 'HomeController',
+			controllerAs : 'home'
 		})
 		.when('/about', {
-			templateUrl : '/public/app/views/pages/about/index.html',
+			templateUrl : '/public/app/views/about.html',
 			controller : 'AboutController',
 			controllerAs : 'about'
 		})
 		.when('/:path', {
-			templateUrl : '/public/app/views/pages/page.html',
+			templateUrl : '/public/app/views/pages/index.html',
 			controller : 'PageController',
 			controllerAs : 'page'
 		});

@@ -6,7 +6,7 @@
 
 		// Controllers
 		'mainCtrl',
-		'portfolioCtrl',
+		'homeCtrl',
 		'aboutCtrl',
 		'pageCtrl',
 

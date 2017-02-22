@@ -10,6 +10,7 @@
 
 	function main($rootScope, $location, Portfolio){
 		var vm = this;
+		vm.pageClass = $rootScope.pageClass;
 		vm.currentPage = currentPage;
 		vm.checkPath = checkPath;
 		$rootScope.$on('$routeChangeStart', setActive);

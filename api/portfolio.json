@@ -24,16 +24,6 @@
 	"url" :"buildmateapp",
 	"description" :"Web application enabling builders/tradesmen to manage their projects and tenders."
 },{
-	"name" :"Buildmate - Mobile",
-	"image" :"build_mobile.jpg",
-	"url" :"buildmate-mobile",
-	"description" :"Conceptual interface design for Buildmate dashboard on mobile devices."
-},{
-	"name" :"Carioca Digital",
-	"image" :"cd_thumb.jpg",
-	"url" :"carioca-digital",
-	"description" :"Logo design for a start-up technology company based in Rio de Janeiro."
-},{
 	"name" :"Claromentis",
 	"image" :"timesheets.jpg",
 	"url" :"claromentis",
@@ -43,4 +33,14 @@
 	"image" :"infocapture.jpg",
 	"url" :"claromentis-infocapture",
 	"description" :"Early stage concept and exploration into dynamic form building using drag and drop."
+},{
+	"name" :"Buildmate - Mobile",
+	"image" :"build_mobile.jpg",
+	"url" :"buildmate-mobile",
+	"description" :"Conceptual interface design for Buildmate dashboard on mobile devices."
+},{
+	"name" :"Carioca Digital",
+	"image" :"cd_thumb.jpg",
+	"url" :"carioca-digital",
+	"description" :"Logo design for a start-up technology company based in Rio de Janeiro."
 }]

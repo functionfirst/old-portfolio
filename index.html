@@ -32,7 +32,8 @@
 	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
 	<![endif]-->
 </head>
-<body ng-app="portfolioApp" ng-controller="MainController as main" ng-class="{ 'filter-open' : main.showNav }">
+<body ng-app="portfolioApp" ng-controller="MainController as main" class="{{ main.pageClass }}">
+	{{main.pageClass}}
 	<div class="row content">
 		<div class="small-2 columns">
 			<a href="#/"  class="header">
@@ -44,7 +45,7 @@
 			<ul class="no-bullet nav">
 				<li ng-class="{ 'active' : main.checkPath('/')}">
 					<a href="#/">Portfolio</a>
-					<ul class="no-bullet nav" ng-if="main.showPortfolio">
+					<ul class="no-bullet nav" ng-if="!main.checkPath('/about')">
 						<li ng-class="{ 'active' : main.checkPath(client.url)}" ng-repeat="client in main.clients">
 							<a href="/#{{client.url}}">{{client.name}}</a>
 						</li>
