@@ -1,29 +1,59 @@
-<h1>Live Auctions</h1>
+<h1>Live Auctions <small>gulfplates.com</small></h1>
+
+<p>
+    <a target="_blank" href="http://178.62.213.155:3000/">View demo system <span class="fa fa-external-link"></span></a>
+</p>
 
 <div class="row">
 	<div class="small-9 columns">
 		<p class="lead">
-			Live auction application that uses socket.io to instantly update connected client machines when someone submits a bid.
+			The initial scope of the Gulf Plates project was to design a web application that could facilitate the sale
+			of car number plates online.
+			Gulf Plates was a web application designed for the one off sale of 
+			live auction Live auction application that uses socket.io to instantly update connected client machines when someone submits a bid.
 		</p>
 
-		<h3>Brief</h3>
-
-		<p>lipsum lorem ipsum amet</p>
-
-		<h3>Solution</h3>
-
-		<p>lipsum lorem ipsum amet</p>
-
-		<p class="text-center">
-			<img src="/public/assets/images/gulfplates_view.png">
+		<p class="text-center float-right">
+			<a target="_blank" href="/public/assets/images/gulfplates_view.png"><img src="/public/assets/images/gulfplates_view.png"></a>
 		</p>
 
-		<p class="text-center">
-			<a class="button large" target="_blank" href="http://178.62.213.155:3000/">View Live Auctions <span class="fa fa-external-link"></span></a>
+		<h3>Features</h3>
+
+		<ul>
+			<li>Auction management</li>
+			<li>User Registration & Management</li>
+			<li>Live Auction updates pushed to connected client browsers using Socket.io (websockets)</li>
+			<li>Manual incremental bidding</li>
+			<li>Automated bidding</li>
+		</ul>
+
+		<h3>Summary</h3>
+
+		<p>
+			Auctions were set with start dates which counted down as the date/time got closer. Once the start time was reached, the NodeJS back-end
+			would push an auction start request to each connected client allowing them to start bidding.
+		</p>
+
+		<p>
+			In cases where bidding was still going on the system allowed the administrator to set a time period which the auction was extended by
+			each time a new offer was received. This left the auction system open ended but allowed each user time to make their bid while also
+			preventing users 'sniping' a low bid in at the last second.
+		</p>
+
+		<p>
+			Bidding allowed the users to select their increment amount rather than a fixed bid amount. This allowed the user to quickly see the
+			current bid and increment by the amount they selected.
+		</p>
+
+		<p>
+			Autobidding, for those users who had a clear idea of their maximum offer. Autobid
+			allowed them to set a maximumum value for the auction. When other users bid, the autobid system would immediately counter the bid. In
+			situations where there were multiple Autobids, placed the system would identify the highest Autobid and assign them as the current
+			bid holder using the second highest Autobid as their offer.
 		</p>
 	</div>
     <div class="small-3 columns">
-        <strong>Roles</strong>
+        <strong>Role</strong>
 
         <ul class="no-bullet striped-list">
             <li>Front & Back-end Developer</li>
