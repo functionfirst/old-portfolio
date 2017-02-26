@@ -6,7 +6,6 @@
 		// Controllers
 		'mainCtrl',
 		'homeCtrl',
-		'aboutCtrl',
 		'pageCtrl',
 
 		// Services

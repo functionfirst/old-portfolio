@@ -32,8 +32,7 @@
 	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
 	<![endif]-->
 </head>
-<body ng-app="portfolioApp" ng-controller="MainController as main" class="{{ main.pageClass }}">
-	{{main.pageClass}}
+<body ng-app="portfolioApp" ng-controller="MainController as main">
 	<div class="row content">
 		<div class="small-2 columns">
 			<a href="#/"  class="header">
@@ -67,7 +66,7 @@
 
 		</div>
 		<div class="small-10 columns">
-			<div class="pt-page" ng-class="pageClass" ng-view></div>
+			<div class="pt-page" ng-view></div>
 		</div>
 	</div>
 

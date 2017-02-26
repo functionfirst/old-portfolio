@@ -7,11 +7,11 @@ angular.module('appRoutes', ['ngRoute'])
 			controller : 'HomeController',
 			controllerAs : 'home'
 		})
-		.when('/about', {
-			templateUrl : '/public/app/views/about.html',
-			controller : 'AboutController',
-			controllerAs : 'about'
-		})
+		// .when('/about', {
+		// 	templateUrl : '/public/app/views/about.html',
+		// 	controller : 'AboutController',
+		// 	controllerAs : 'about'
+		// })
 		.when('/:path', {
 			templateUrl : '/public/app/views/pages/index.html',
 			controller : 'PageController',

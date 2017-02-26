@@ -1,4 +1,4 @@
-<h1>Live Auctions <small>gulfplates.com</small></h1>
+<h1>Real-time Auctions <small>gulfplates.com</small></h1>
 
 <p>
     <a target="_blank" href="http://178.62.213.155:3000/">View demo system <span class="fa fa-external-link"></span></a>
@@ -7,10 +7,8 @@
 <div class="row">
 	<div class="small-9 columns">
 		<p class="lead">
-			The initial scope of the Gulf Plates project was to design a web application that could facilitate the sale
-			of car number plates online.
-			Gulf Plates was a web application designed for the one off sale of 
-			live auction Live auction application that uses socket.io to instantly update connected client machines when someone submits a bid.
+			The initial scope of the Gulf Plates project was to design and build a web application that could facilitate the sale
+			of car number plates in real-time.
 		</p>
 
 		<p class="text-center float-right">
@@ -20,14 +18,23 @@
 		<h3>Features</h3>
 
 		<ul>
+			<li>Real-time Auctions (using Socket.io)</li>
 			<li>Auction management</li>
 			<li>User Registration & Management</li>
-			<li>Live Auction updates pushed to connected client browsers using Socket.io (websockets)</li>
 			<li>Manual incremental bidding</li>
 			<li>Automated bidding</li>
 		</ul>
 
 		<h3>Summary</h3>
+
+		<p>
+			The final real-time auction system was based on the MEAN stack, using AngularJS for the front-end with a Node/ExpressJS back-end.
+			The real-time nature of the app was facilitated by socket.io which allows for real-time bi-directional communication between
+			web clients and the server. 	
+		</p>
+
+					Gulf Plates was a web application designed for the one off sale of 
+			live auction Live auction application that uses socket.io to instantly update connected client machines when someone submits a bid.
 
 		<p>
 			Auctions were set with start dates which counted down as the date/time got closer. Once the start time was reached, the NodeJS back-end

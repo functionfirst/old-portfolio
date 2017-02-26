@@ -2,6 +2,8 @@
 	angular.module('homeCtrl', ['portfolioService'])
 		.controller('HomeController', home);
 
+	home.$inject = ['$rootScope', '$scope', 'Portfolio'];
+
 
 	//////
 

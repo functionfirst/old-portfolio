@@ -2,6 +2,8 @@
 	angular.module('portfolioService', [])
 		.factory('Portfolio', portfolio);
 
+		portfolio.$inject = ['$http'];
+
 	//////
 
 	function portfolio($http) {

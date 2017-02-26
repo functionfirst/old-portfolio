@@ -1,7 +1,7 @@
 (function(){
 	angular.module('mainCtrl', ['portfolioService'])
 		.controller('MainController', main);
-	
+
 	main.$inject = ['$rootScope', '$location', 'Portfolio'];
 
 
@@ -10,22 +10,12 @@
 
 	function main($rootScope, $location, Portfolio){
 		var vm = this;
-		vm.pageClass = $rootScope.pageClass;
-		vm.currentPage = currentPage;
 		vm.checkPath = checkPath;
 		$rootScope.$on('$routeChangeStart', setActive);
 		init();
 
-		function setActive(event, next, current) {
-			// console.log(next.$$route.originalPath);
-			vm.currentPath = next.$$route.originalPath
-
-			vm.showPortfolio = next.params.path;
-
-			if(vm.showPortfolio) {
-				vm.currentPath = next.params.path; 
-			}
-
+		function checkPath(path) {
+			return vm.currentPath == path;
 		}
 
 		function init() {
@@ -36,14 +26,14 @@
 			});
 		}
 
-		function checkPath(path) {
-			return vm.currentPath == path;
-		}
+		function setActive(event, next, current) {
+			vm.currentPath = next.$$route.originalPath
+			vm.showPortfolio = next.params.path;
 
-		// highlight current page
-		function currentPage(page) {
-			return  $location.path() === page;	
+			if(vm.showPortfolio) {
+				vm.currentPath = next.params.path; 
+			}
+
 		}
-		
 	}
 })();
