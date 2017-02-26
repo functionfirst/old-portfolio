@@ -4,10 +4,10 @@
 	"url" :"property-portal",
 	"description" :"Application development for a property portal in Qatar. Built with MongoDb and AngularJS."
 },{
-	"name" :"Live Auctions",
+	"name" :"Real-time Auctions",
 	"image" :"live_auctions.jpg",
-	"url" :"live-auctions",
-	"description" :"Auction system leveraging Socket.io to push live customer bids to connected browsers."
+	"url" :"real-time-auctions",
+	"description" :"A real-time auction system using socket.io to push live bids to connected browsers."
 },{
 	"name" :"Content Manager",
 	"image" :"content-manager.jpg",
