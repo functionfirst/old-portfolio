@@ -1,37 +1,52 @@
-<h1>Content Manager <small>shatteredscales.co.uk</small></h1>
+<h1>Content Manager</h1>
 
 <p>
-    <a target="_blank" href="http://shatteredscales.co.uk">View website <span class="fa fa-external-link"></span></a>
+    <a target="_blank" href="http://178.62.213.155/">View website <span class="fa fa-external-link"></span></a>
 </p>
 
 <div class="row">
     <div class="small-9 columns">
         <p class="lead">
-            An elegant content management system, designed to be simple to interactive with using a minimal UI. The architecture itself was
-             based around a MongoDB document database accessed using an Express/MongooseJS Rest API.
+            A simple content and blogging platform that allows you to quickly create content pages and connect them together
+            in a very simple and fluid manner. Using minimal UI and a context menu for formatting, the main focus of the
+            platform is on creating and connecting content quickly.
         </p>
-        
+
+        <a target="_blank" class="float-right" href="http://178.62.213.155/"><img src="/public/assets/images/contentmanager.jpg"></a>
+
         <h3>Features</h3>
 
         <ul>
-            <li>Inline page editing</li>
+            <li>Inline content editing</li>
             <li>Drag and drop image upload</li>
             <li>Simple page creation</li>
-            <li>Auto-saving</li>
+            <li>Content auto-saving</li>
             <li>Private/Public pages</li>
-            <li>Blog system </li>
-            <li>Universal commenting system for Blogs & Pages</li>
+            <li>Blogs</li>
+            <li>Comment engine</li>
         </ul>
 
         <h3>Summary</h3>
 
         <p>
-            Inline editing allowed an administrator to simply click on the live page and start editing. A built in contextual toolbar provided simple text
-            formatting
+            Content Manager was built on top of a MongoDB document data store accessed using an Express/MongooseJS Rest API. The front-end of the
+            site is a single page AngularJS application which allows for quick transitioning between pages.
         </p>
 
         <p>
-             To create a page simply highlight some text and type a link to a non-existent page, click the link you just created, then click 'Create'.
+            Much of the page content itself is managed via an inline contextual menu which appears when text content is highlighted. This contextual
+            menu offers many of the basic formatting choices expected in an editor, headings, bold, italic, etc. There is also facility for uploading images
+            or other media types via a contextual sidebar or can alternatively be uploadede by simply dragging the image from your desktop onto the page.
+        </p>
+
+        <p>
+            By allowing content changes to be automatically saved back to the server via a Rest API I was able to exclude the need for any kind of
+            UI to control page saving.
+        </p>
+
+        <p>
+            Creating a new page is also straight forward, simply highlight the text you want to link from, click the contextual menu to insert
+            your link then follow that link to the new page. If the page doesn't already exist, simply click Create and begin editing your new page.
         </p>
     </div>
     <div class="small-3 columns">
