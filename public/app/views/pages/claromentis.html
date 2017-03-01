@@ -1,25 +1,75 @@
 <h1>Claromentis</h1>
 
 <p class="lead">
-	A large body of work produced during my time working for the folks at <a href="http://claromentis.com">Claromentis</a> in Brighton.
+	As the Product Manager for the folks at <a href="http://claromentis.com">Claromentis</a> in Brighton
+	I was in charge of the Product team which was composed of both Designers and Developers working together on the core product platform.
 </p>
 
-<h3>Intranet platform</h3>
+<p>You can review some of my achievements during this period below:</p>
+
+<ul>
+	<li><a ng-click="page.scrollTo('process')">Process changes</a></li>
+	<li><a ng-click="page.scrollTo('prototypes')">Prototypes</a></li>
+</ul>
 
 <div class="row">
 	<div class="small-8 columns">
 
-		<p>
-			Introduction to Claormentis in general and some things that I did while I was there.
+		<h3 id="process">Process changes</h3>
+		
+		<p class="lead">
+			During my time at Claromentis I was responsible for coordinating the design team and establishing a solid foundation
+			for the front-end of the system. As part of this role and as Product Manager I implemented a number of key process
+			changes to improve efficiency:
 		</p>
 
-		<h3>Features</h3>
+		<ol>
+			<li>
+				<h5>Prototyping</h5>
 
-		<ul>
-			<li>Prototyping</li>
-			<li>Bootstrap/Established a baseline foundation and moved away from inconsistent UI between each modules</li>
-			<li></li>
-		</ul>
+				<p>
+					Introduced interactive low fidelity prototyping to the organisation. Prior to my joining Claromentis any specificaiton
+					for developers was illustrated using static screenshots built in Photoshop. I introduced the existing team to 
+					Axure and the benefits of using HTMl & CSS to prototype their ideas.
+				</p>
+
+				<p>
+					By changing the process in this way Developers were able to more easily understand the project requirements, interacting
+					with the prototype offered them a clearer and deeper understanding of how the UI should work.
+				</p>
+			</li>
+			<li>
+				<h5>Bootstrap Foundations</h5>
+
+				<p>
+					When I arrived there were no established guidelines for design and front-end and the framework itself was still using an outdated
+					table-based layout. Each module of the system was designed independently and as a result were often inconsistent in both design
+					and user experience. There were also significant problems with the existing codebase as duplicate, heavy and extremely customised CSS
+					was rife throughout the system.
+				</p>
+
+				<p>
+					Given the size and complexity of the existing codebase I opted to implement Bootstrap as a foundatin layer from which we
+					could build the front-end. I also defined some simple front-end guidelines which included the blacklisting of ID's as css selectors
+					and !important in css properties. Javascript could only be hooked upto ID's or CSS classes prefixed with <em>js-</em>, these classes
+					were to be exclusively used by javascript and no style properties were to be applied.
+				</p>
+
+				<p>
+					By implementing this we very quickly reduced the amount of code we had to maintain as well as bring much more consistency to design
+					and interaction across all modules. 
+				</p>
+			</li>
+			<li>
+				<h5>CVS to GIT</h5>
+
+				<p>
+					I championed the migration of our codebase from CVS to GIT. This lead to better code management and more collaborative working thanks
+					to the more robust branching system. This lead to more flexible releases as developers could work on feature branches without affecting
+					the release of bugs and other quick fixes due to commiting to the master branch.
+				</p>
+			</li>
+		</ol>
 
 		<hr >
 	</div>
@@ -43,16 +93,17 @@
 	</div>
 </div>
 
-<h3>Prototypes</h3>
+<h3 id="prototypes">Prototypes</h3>
 
 <div class="row">
 	<div class="small-8 columns">
 		<p class="lead">
-			Various prototypes developed over a number of years. These were designed to be additional modules added to the Claromentis framework
-			which brought additional specialised functionality to the system.
+			As Product Manager and Senior UI Designer for Claromentis I created a number of key prototypes. These were designed to be additional
+			modules which could be added onto the core Claromentis offering, these modules offered further specialisation in areas where
+			customers needed better support.
 		</p>
 
-		<hr>
+        <a target="_blank" class="float-right" href="http://prototypes.claromentis.net/pages2/"><img src="/public/assets/images/pages.jpg"></a>
 
 		<h4>Pages (2016)</h4>
 		
@@ -61,11 +112,14 @@
 		</p>
 
 		<p>
-			Initial prototype for a new Claromentis module. The Pages module was designed to replace an existing but outdated CMS module.
-			Pages was designed to be a plug-and-play system that allowed components to be dragged into place on the page and configured in place.
+			This is the initial prototype for Pages, a new Claromentis module which was designed to replace the existing but outdated CMS module.
+			Pages was designed to be plug-and-play, allowing new components to be simply dragged into place on the page while also allowing for
+			existing modules to be reconfigured using contextual option panels.
 		</p>
 
 		<hr>
+
+        <a target="_blank" class="float-right" href="http://prototypes.claromentis.net/quiz/#p=quiz"><img src="/public/assets/images/quizbuilder.jpg"></a>
 
 		<h4>Quiz Builder (2016)</h4>
 
@@ -73,7 +127,16 @@
 			<a class="_blank" href="http://prototypes.claromentis.net/quiz/#p=quiz">View Quiz Builder protototype <span class="fa fa-external-link"></span></a>
 		</p>
 
+		<p>
+			In addition to offering support for Learning packages built using SCORM, Claromentis also needed to developer it's offering further into the
+			Learning Management Systems (LMS) space. With that in mind I began researching and implementing a Quiz Builder module which would allow
+			clients not familiar with building SCORM packages. The Quiz Builder itself allowed administrators to create new quizzes, ask questions and track
+			results and other data.
+		</p>
+
 		<hr>
+
+		<a target="_blank" class="float-right" href="http://prototypes.claromentis.net/timesheets/"><img src="/public/assets/images/timesheets_prot.jpg"></a>
 
 		<h4>Timesheets - Prototype (2014)</h4>
 
@@ -82,15 +145,14 @@
 		</p>
 
 		<p>
-			Low-fidelity prototype for a Timesheet module based on the Claromentis framework. Built using Axure.
-			Prototyping of a Timesheet module to extend the features available in within the Claromentis intranet framework.
-		</p>
-		
-		<p>
-			Built using Axure, this prototype explored the required features that would allow Project Managers to manage a
-			teams schedule as well as allowing the team to record their actual activity. 
+			This is a low-fidelity prototype for a Timesheet module based on the Claromentis framework. Built using Axure, this module explored the requirements
+			that would allow Project Managers to schedule team diaries, as well as allowing team members to record their time against these activities.
 		</p>
 
+		<p>
+			Given further time for research and development, the prototype could have been extended to offer an improved reporting system that would allow
+			project managers to track progress and identify any project delays.
+		</p>
 	</div>
 	<div class="small-4 columns">
 		<strong>Role</strong>
