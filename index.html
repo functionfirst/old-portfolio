@@ -48,7 +48,7 @@
 				<ul class="no-bullet nav">
 					<li ng-class="{ 'active' : main.checkPath('/')}">
 						<a href="#/">Portfolio</a>
-						<ul class="no-bullet nav" ng-if="!main.checkPath('about')">
+						<ul class="no-bullet nav">
 							<li ng-class="{ 'active' : main.checkPath(client.url)}" ng-repeat="client in main.clients">
 								<a href="/#{{client.url}}">{{client.name}}</a>
 							</li>
