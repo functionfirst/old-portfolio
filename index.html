@@ -34,43 +34,49 @@
 </head>
 <body ng-app="portfolioApp" ng-controller="MainController as main">
 	<div class="row content">
-		<div class="small-2 columns">
-			<a href="#/"  class="header">
-				<h1 class="header-title">Alan Jenkins</h1>
+		<div class="large-2 columns">
+			<header>
+				<a class="header" ng-click="main.showMenu = !main.showMenu">
+					<span class="float-right menu-icon"></span>
+					<h1 class="header-title">Alan Jenkins</h1>
 
-				<h2 class="header-subtitle">Designer &amp; Developer</h2>
-			</a>
+					<h2 class="header-subtitle">Designer &amp; Developer</h2>
+				</a>
+			</header>
 
-			<ul class="no-bullet nav">
-				<li ng-class="{ 'active' : main.checkPath('/')}">
-					<a href="#/">Portfolio</a>
-					<ul class="no-bullet nav" ng-if="!main.checkPath('/about')">
-						<li ng-class="{ 'active' : main.checkPath(client.url)}" ng-repeat="client in main.clients">
-							<a href="/#{{client.url}}">{{client.name}}</a>
-						</li>
-					</ul>
-				</li>
-				<li ng-class="{ 'active' : main.checkPath('/about')}"><a href="#/about">About</a></li>
-			</ul>
-
-			<ul class="no-bullet nav-social">
-				<li><a href="https://github.com/functionfirst/" target="_blank"><span class="fa fa-github fa-2x"></span> </a></li>
-				<li><a href="https://www.linkedin.com/in/aljenks/" target="_blank"><span class="fa fa-linkedin fa-2x"></span> </a></li>
-				<li><a href="http://stackoverflow.com/users/2025557/alan-jenkins" target="_blank"><span class="fa fa-stack-overflow fa-2x"></span> </a></li>
-				<li><a href="http://twitter.com/aljenks" target="_blank"><span class="fa fa-twitter fa-2x"></span> </a></li>	
-			</ul>
-
-			<p class="text-center">
-				<a target="_blank" href="https://github.com/functionfirst/portfolio"><small>View source code</small><br /><span class="fa fa-github"></span> Github</a>.
-			</p>
-
+			<nav ng-class="{'active' : main.showMenu }">
+				<ul class="no-bullet nav">
+					<li ng-class="{ 'active' : main.checkPath('/')}">
+						<a href="#/">Portfolio</a>
+						<ul class="no-bullet nav" ng-if="!main.checkPath('about')">
+							<li ng-class="{ 'active' : main.checkPath(client.url)}" ng-repeat="client in main.clients">
+								<a href="/#{{client.url}}">{{client.name}}</a>
+							</li>
+						</ul>
+					</li>
+					<li ng-class="{ 'active' : main.checkPath('about')}"><a href="#/about">About</a></li>
+				</ul>
+			</nav>
 		</div>
-		<div class="small-10 columns">
+		<div class="large-10 columns">
 			<div class="pt-page" ng-view></div>
 		</div>
 	</div>
 
-	<div class="overlay" ng-click="main.hideNav()"></div>
+	<div class="row content">
+			<footer class="footer text-center">
+				<ul class="no-bullet xtext-center nav-social">
+					<li><a href="https://github.com/functionfirst/" target="_blank"><span class="fa fa-github fa-2x"></span> </a></li>
+					<li><a href="https://www.linkedin.com/in/aljenks/" target="_blank"><span class="fa fa-linkedin fa-2x"></span> </a></li>
+					<li><a href="http://stackoverflow.com/users/2025557/alan-jenkins" target="_blank"><span class="fa fa-stack-overflow fa-2x"></span> </a></li>
+					<li><a href="http://twitter.com/aljenks" target="_blank"><span class="fa fa-twitter fa-2x"></span> </a></li>	
+				</ul>
+
+				<p>
+					<a target="_blank" href="https://github.com/functionfirst/portfolio"><small>View source code on <span class="fa fa-github"></span> Github</small></a>
+				</p>
+			</footer>
+	</div>
 
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="/public/assets/lib/angularjs/angular.min.js"></script>

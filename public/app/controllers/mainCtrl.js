@@ -27,7 +27,8 @@
 		}
 
 		function setActive(event, next, current) {
-			vm.currentPath = next.$$route.originalPath
+			vm.showMenu = false;
+			vm.currentPath = next.$$route.originalPath;
 			vm.showPortfolio = next.params.path;
 
 			if(vm.showPortfolio) {

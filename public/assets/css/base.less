@@ -28,7 +28,6 @@ a {
 }
 
 .content {
-	margin: 3rem auto;
 
 	h3 {
 		margin: 2rem 0 1rem;
@@ -65,4 +64,43 @@ hr {
 	border: 0;
 	border-top: 3px solid #1779ba;
 	margin: 3rem auto;
+}
+
+.footer {
+	border-top: 1px solid #eee;
+	margin-top: 2rem;
+	padding: 1rem;
+}
+
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	.content {
+		margin: 1rem auto;
+	}
+	
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+	.content {
+		margin: 1rem auto;
+	}
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.content {
+		margin: 3rem auto;
+	}
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
 }
