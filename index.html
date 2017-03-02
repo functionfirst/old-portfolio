@@ -35,28 +35,28 @@
 <body ng-app="portfolioApp" ng-controller="MainController as main">
 	<div class="row content">
 		<div class="large-2 columns">
-			<header>
+			<header ng-class="{'active' : main.showMenu }">
 				<a class="header" ng-click="main.showMenu = !main.showMenu">
 					<span class="float-right menu-icon"></span>
 					<h1 class="header-title">Alan Jenkins</h1>
 
 					<h2 class="header-subtitle">Designer &amp; Developer</h2>
 				</a>
-			</header>
 
-			<nav ng-class="{'active' : main.showMenu }">
-				<ul class="no-bullet nav">
-					<li ng-class="{ 'active' : main.checkPath('/')}">
-						<a href="#/">Portfolio</a>
-						<ul class="no-bullet nav">
-							<li ng-class="{ 'active' : main.checkPath(client.url)}" ng-repeat="client in main.clients">
-								<a href="/#{{client.url}}">{{client.name}}</a>
-							</li>
-						</ul>
-					</li>
-					<li ng-class="{ 'active' : main.checkPath('about')}"><a href="#/about">About</a></li>
-				</ul>
-			</nav>
+				<nav>
+					<ul class="no-bullet nav">
+						<li ng-class="{ 'active' : main.checkPath('/')}">
+							<a href="#/">Portfolio</a>
+							<ul class="no-bullet nav">
+								<li ng-class="{ 'active' : main.checkPath(client.url)}" ng-repeat="client in main.clients">
+									<a href="/#{{client.url}}">{{client.name}}</a>
+								</li>
+							</ul>
+						</li>
+						<li ng-class="{ 'active' : main.checkPath('about')}"><a href="#/about">About</a></li>
+					</ul>
+				</nav>
+			</header>
 		</div>
 		<div class="large-10 columns">
 			<div class="pt-page" ng-view></div>
